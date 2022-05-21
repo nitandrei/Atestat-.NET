@@ -95,6 +95,12 @@
     <Compile Include="UserControls\MetodeDeProgramare.Designer.cs">
       <DependentUpon>MetodeDeProgramare.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Teorie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Teorie.Designer.cs">
+      <DependentUpon>Teorie.cs</DependentUpon>
+    </Compile>
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\MetodeDeProgramare.resx">
       <DependentUpon>MetodeDeProgramare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Teorie.resx">
+      <DependentUpon>Teorie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
@@ -164,6 +173,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Buton MDP Albastru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Teorie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TeorieOriginal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

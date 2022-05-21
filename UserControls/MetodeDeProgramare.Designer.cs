@@ -73,7 +73,7 @@ namespace Atestat.NET.UserControls
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
             // button3
-            //
+            // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -91,7 +91,7 @@ namespace Atestat.NET.UserControls
             this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
             // 
             // button4
-            //
+            // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -112,6 +112,7 @@ namespace Atestat.NET.UserControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::Atestat.NET.Properties.Resources.MetodeDeProgramare;
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

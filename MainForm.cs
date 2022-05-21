@@ -34,7 +34,7 @@ namespace Atestat.NET
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Components.Hide(ref Components.metodeDeProgramare);
+            Components.CleanPanel();
         }
 
         //magie?
@@ -46,6 +46,11 @@ namespace Atestat.NET
                 cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
                 return cp;
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.Text = Components.metodeDeProgramare.IsDisposed.ToString();
         }
     }
 }

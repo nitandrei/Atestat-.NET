@@ -49,6 +49,18 @@ namespace Atestat.NET
             }
         }
 
+        public static void CleanPanel()
+        {
+            int i = 0;
+            foreach (Control c in Components.panelRight.Controls)
+                i++;
+            while (i > 0)
+            {
+                UserControl userControl = (UserControl)Components.panelRight.Controls[--i];
+                Components.Hide(ref userControl);
+            }
+        }
+
        /* public static void initializeFont()//Components.pfc.Families[0]
         {
             pfc = new PrivateFontCollection();
