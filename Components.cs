@@ -5,9 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Atestat.NET.Properties;
+using Atestat.NET.UserControls;
 
 namespace Atestat.NET
 {
@@ -17,7 +19,6 @@ namespace Atestat.NET
         public static Panel panelLeft;
         public static Panel panelRight;
         public static MetodeDeProgramare metodeDeProgramare;
-
         public static void Show<T>(ref T userControl) where T : UserControl
         {
             if (userControl == null || userControl.IsDisposed)
@@ -32,6 +33,8 @@ namespace Atestat.NET
         }
         public static void Hide<T>(ref T userControl) where T : UserControl
         {
+            if (userControl == null || userControl.IsDisposed)
+                return;
             userControl.Hide();
             panelRight.Controls.Remove(userControl);
             userControl.Dispose();
@@ -40,10 +43,6 @@ namespace Atestat.NET
             {
                 c.BackgroundImage.Dispose();
             }
-        }
-        public static string Name(UserControl userControl)
-        {
-            return userControl.GetType().FullName;
         }
         static Components()
         {

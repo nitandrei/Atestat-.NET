@@ -121,10 +121,19 @@
   <data name="Buton_Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Buton Exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pexels_christian_heitz_842711" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\pexels-christian-heitz-842711.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Buton_MDP_Albastru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Buton MDP Albastru.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="White_Yellow_Geometric_Business_Plan_Presentation_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\White_Yellow_Geometric_Business_Plan_Presentation_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Buton_MDP_Mov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Buton MDP Mov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MetodeDeProgramare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\MetodeDeProgramare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MetodeDeProgramareOriginal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\MetodeDeProgramareOriginal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WaitingForInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\WaitingForInput.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

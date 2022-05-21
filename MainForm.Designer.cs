@@ -91,7 +91,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);

@@ -20,16 +20,32 @@ namespace Atestat.NET
             Components.panelRight = this.panel2;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.metodeDeProgramare);
+        }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Components.Hide(ref Components.metodeDeProgramare);
+        }
+
+        //magie?
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                return cp;
+            }
         }
     }
 }
+

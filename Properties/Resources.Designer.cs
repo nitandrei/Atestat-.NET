@@ -73,9 +73,9 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pexels_christian_heitz_842711 {
+        internal static System.Drawing.Bitmap Buton_MDP_Albastru {
             get {
-                object obj = ResourceManager.GetObject("pexels_christian_heitz_842711", resourceCulture);
+                object obj = ResourceManager.GetObject("Buton_MDP_Albastru", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,39 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap White_Yellow_Geometric_Business_Plan_Presentation_1 {
+        internal static System.Drawing.Bitmap Buton_MDP_Mov {
             get {
-                object obj = ResourceManager.GetObject("White_Yellow_Geometric_Business_Plan_Presentation_1", resourceCulture);
+                object obj = ResourceManager.GetObject("Buton_MDP_Mov", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MetodeDeProgramare {
+            get {
+                object obj = ResourceManager.GetObject("MetodeDeProgramare", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MetodeDeProgramareOriginal {
+            get {
+                object obj = ResourceManager.GetObject("MetodeDeProgramareOriginal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WaitingForInput {
+            get {
+                object obj = ResourceManager.GetObject("WaitingForInput", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
