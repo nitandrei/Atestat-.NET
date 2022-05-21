@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Atestat.NET.Properties;
 
 namespace Atestat.NET
 {
@@ -15,6 +16,20 @@ namespace Atestat.NET
         public MainForm()
         {
             InitializeComponent();
+            Components.panelLeft = this.panel1;
+            Components.panelRight = this.panel2;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
         }
     }
 }
