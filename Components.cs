@@ -23,6 +23,7 @@ namespace Atestat.NET
         public static Panel panelRight;
         public static MetodeDeProgramare metodeDeProgramare;
         public static Teorie teorie;
+        public static DivideEtImpera divideEtImpera;
         public static PrivateFontCollection pfc;
         public static void Show<T>(ref T userControl, bool cleanPanel) where T : UserControl
         {

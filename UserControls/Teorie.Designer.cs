@@ -181,6 +181,7 @@ namespace Atestat.NET.UserControls
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Teorie";
             this.Size = new System.Drawing.Size(1280, 720);

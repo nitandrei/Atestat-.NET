@@ -113,6 +113,16 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DivideEtImpera {
+            get {
+                object obj = ResourceManager.GetObject("DivideEtImpera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MetodeDeProgramare {
             get {
                 object obj = ResourceManager.GetObject("MetodeDeProgramare", resourceCulture);

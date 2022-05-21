@@ -27,7 +27,8 @@ namespace Atestat.NET.UserControls
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Components.Show(ref Components.divideEtImpera, false);
+            Components.Hide(ref Components.metodeDeProgramare);
         }
         private void button2_Click(object sender, EventArgs e)
         {

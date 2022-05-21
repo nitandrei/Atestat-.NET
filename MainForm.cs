@@ -19,6 +19,7 @@ namespace Atestat.NET
             InitializeComponent();
             Components.panelLeft = this.panel1;
             Components.panelRight = this.panel2;
+            //fac un UserControl cu instructiuni, care apoi isi ia delete oricum
         }
 
         private void button2_Click(object sender, EventArgs e)
