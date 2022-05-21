@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
+using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -19,6 +22,7 @@ namespace Atestat.NET
         public static Panel panelLeft;
         public static Panel panelRight;
         public static MetodeDeProgramare metodeDeProgramare;
+        public static PrivateFontCollection pfc;
         public static void Show<T>(ref T userControl) where T : UserControl
         {
             if (userControl == null || userControl.IsDisposed)
@@ -44,6 +48,16 @@ namespace Atestat.NET
                 c.BackgroundImage.Dispose();
             }
         }
+
+       /* public static void initializeFont()//Components.pfc.Families[0]
+        {
+            pfc = new PrivateFontCollection();
+            int fontLength = Resources.FONT.Length;
+            byte[] fontdata = Resources.FONT;
+            IntPtr data = Marshal.AllocCoTaskMem(fontLength);
+            Marshal.Copy(fontdata, 0, data, fontLength);
+            pfc.AddMemoryFont(data, fontLength);
+        }*/
         static Components()
         {
 
