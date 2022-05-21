@@ -16,5 +16,13 @@ namespace Atestat.NET.UserControls
         {
             InitializeComponent();
         }
+        private void buttonMouseEnter(object sender, EventArgs e)
+        {
+            (sender as Button).BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_Carte_Mov;
+        }
+        private void buttonMouseLeave(object sender, EventArgs e)
+        {
+            (sender as Button).BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_Carte_Negru;
+        }
     }
 }

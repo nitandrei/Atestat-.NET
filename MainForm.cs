@@ -21,20 +21,19 @@ namespace Atestat.NET
             Components.panelRight = this.panel2;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            Components.Show(ref Components.metodeDeProgramare);
+            Components.Show(ref Components.metodeDeProgramare, true);
         }
 
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Components.CleanPanel();
+            Components.Show(ref Components.teorie, true);
+        }
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         //magie?
@@ -46,11 +45,6 @@ namespace Atestat.NET
                 cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
                 return cp;
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            label1.Text = Components.metodeDeProgramare.IsDisposed.ToString();
         }
     }
 }

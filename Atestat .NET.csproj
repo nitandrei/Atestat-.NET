@@ -180,5 +180,11 @@
   <ItemGroup>
     <None Include="Images\TeorieOriginal.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton Carte Negru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton Carte Mov.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

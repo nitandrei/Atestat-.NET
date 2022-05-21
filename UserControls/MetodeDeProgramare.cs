@@ -17,50 +17,22 @@ namespace Atestat.NET.UserControls
         {
             InitializeComponent();
         }
-
-        private void button1_MouseEnter(object sender, EventArgs e)
+        private void buttonMouseEnter(object sender, EventArgs e)
         {
-            button1.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Mov;
+            (sender as Button).BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Mov;
         }
-
-        private void button1_MouseLeave(object sender, EventArgs e)
+        private void buttonMouseLeave(object sender, EventArgs e)
         {
-            button1.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
+            (sender as Button).BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
         }
-
-        private void button2_MouseEnter(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            button2.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Mov;
-        }
 
-        private void button2_MouseLeave(object sender, EventArgs e)
-        {
-            button2.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
         }
-
-        private void button3_MouseEnter(object sender, EventArgs e)
-        {
-            button3.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Mov;
-        }
-
-        private void button3_MouseLeave(object sender, EventArgs e)
-        {
-            button3.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
-        }
-
-        private void button4_MouseEnter(object sender, EventArgs e)
-        {
-            button4.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Mov;
-        }
-
-        private void button4_MouseLeave(object sender, EventArgs e)
-        {
-            button4.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }

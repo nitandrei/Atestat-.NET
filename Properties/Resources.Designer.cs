@@ -63,6 +63,26 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Buton_Carte_Mov {
+            get {
+                object obj = ResourceManager.GetObject("Buton_Carte_Mov", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Buton_Carte_Negru {
+            get {
+                object obj = ResourceManager.GetObject("Buton_Carte_Negru", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Buton_Exit {
             get {
                 object obj = ResourceManager.GetObject("Buton_Exit", resourceCulture);
