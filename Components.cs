@@ -26,9 +26,20 @@ namespace Atestat.NET
         public static Panel panelLeft;
         public static Panel panelRight;
         public static Panel panelMini;
-        public static MetodeDeProgramare metodeDeProgramare;
         public static Teorie teorie;
         public static Citirea citirea;
+        public static TablouriUnidimensionale tablouriUnidimensionale;
+        public static TablouriBidimensionale tablouriBidimensionale;
+        public static SirDeCaractere1 sirDeCaractere1;
+        public static SirDeCaractere2 sirDeCaractere2;
+        public static SirDeCaractere3 sirDeCaractere3;
+        public static Subprogram subprogram;
+        public static Recursivitate recursivitate;
+        public static Liste1 liste1;
+        public static Liste2 liste2;
+        public static Grafuri1 grafuri1;
+        public static Grafuri2 grafuri2;
+        public static MetodeDeProgramare metodeDeProgramare;
         public static DivideEtImpera divideEtImpera;
         public static Teste teste;
         /// <summary>
