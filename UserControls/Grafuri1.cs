@@ -16,5 +16,11 @@ namespace Atestat.NET.UserControls
         {
             InitializeComponent();
         }
+
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.grafuri2, false);
+            Components.Hide(ref Components.grafuri1);
+        }
     }
 }

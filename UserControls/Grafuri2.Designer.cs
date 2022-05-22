@@ -37,7 +37,7 @@ namespace Atestat.NET.UserControls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Atestat.NET.Properties.Resources.Grafuri2;
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Grafuri2";
             this.Size = new System.Drawing.Size(1280, 720);
             this.ResumeLayout(false);

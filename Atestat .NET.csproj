@@ -451,5 +451,8 @@
   <ItemGroup>
     <None Include="Images\SumaDiferenta1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton Next.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

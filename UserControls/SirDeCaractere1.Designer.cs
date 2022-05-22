@@ -29,15 +29,34 @@ namespace Atestat.NET.UserControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.buttonNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // buttonNext
+            // 
+            this.buttonNext.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNext.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_Next;
+            this.buttonNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonNext.FlatAppearance.BorderSize = 0;
+            this.buttonNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNext.Location = new System.Drawing.Point(1206, 647);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(43, 65);
+            this.buttonNext.TabIndex = 2;
+            this.buttonNext.UseVisualStyleBackColor = false;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // SirDeCaractere1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Atestat.NET.Properties.Resources.SirCaractere1;
+            this.Controls.Add(this.buttonNext);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "SirDeCaractere1";
             this.Size = new System.Drawing.Size(1280, 720);
             this.ResumeLayout(false);
@@ -45,5 +64,7 @@ namespace Atestat.NET.UserControls
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonNext;
     }
 }
