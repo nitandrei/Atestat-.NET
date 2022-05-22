@@ -95,11 +95,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\CifreleUnuiNumar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CifreleUnuiNumar.Designer.cs">
+      <DependentUpon>CifreleUnuiNumar.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Citirea.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\Citirea.Designer.cs">
       <DependentUpon>Citirea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Divizibilitate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Divizibilitate.Designer.cs">
+      <DependentUpon>Divizibilitate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fibonacci.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fibonacci.Designer.cs">
+      <DependentUpon>Fibonacci.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Grafuri1.cs">
       <SubType>UserControl</SubType>
@@ -160,6 +178,12 @@
     </Compile>
     <Compile Include="UserControls\Subprogram.Designer.cs">
       <DependentUpon>Subprogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SumaDiferenta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SumaDiferenta.Designer.cs">
+      <DependentUpon>SumaDiferenta.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\TablouriBidimensionale.cs">
       <SubType>UserControl</SubType>
@@ -223,11 +247,20 @@
     <EmbeddedResource Include="UserControls\AlgoritmiDeBaza.resx">
       <DependentUpon>AlgoritmiDeBaza.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CifreleUnuiNumar.resx">
+      <DependentUpon>CifreleUnuiNumar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Citirea.resx">
       <DependentUpon>Citirea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DivideEtImpera.resx">
       <DependentUpon>DivideEtImpera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Divizibilitate.resx">
+      <DependentUpon>Divizibilitate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fibonacci.resx">
+      <DependentUpon>Fibonacci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Grafuri1.resx">
       <DependentUpon>Grafuri1.cs</DependentUpon>
@@ -261,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Subprogram.resx">
       <DependentUpon>Subprogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SumaDiferenta.resx">
+      <DependentUpon>SumaDiferenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\TablouriBidimensionale.resx">
       <DependentUpon>TablouriBidimensionale.cs</DependentUpon>
@@ -399,6 +435,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Buton Teste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CifreleUnuiNumar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Divizibilitate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Fibonacci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SumaDiferenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SumaDiferenta1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
