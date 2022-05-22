@@ -168,7 +168,7 @@ namespace Atestat.NET
         public static void initComponents()
         {
             Components.initQuestions();
-            Components.initializeFont();
+            //Components.initializeFont();
             Components.mainForm = new MainForm();
         }
         static Components()

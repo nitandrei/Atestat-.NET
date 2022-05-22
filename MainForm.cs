@@ -27,10 +27,10 @@ namespace Atestat.NET
             Components.panelRight = this.panel2;
             Components.panelMini = this.panel3;
             Components.panelLeftInitialWidth = this.panel1.Width;
-            this.buttonTeorie.Font = new Font(Components.pfc.Families[0], 14.25F);
+            /*this.buttonTeorie.Font = new Font(Components.pfc.Families[0], 14.25F);
             this.buttonExit.Font = new Font(Components.pfc.Families[0], 14.25F);
             this.buttonMDP.Font = new Font(Components.pfc.Families[0], 14.25F);
-            this.buttonADB.Font = new Font(Components.pfc.Families[0], 14.25F);
+            this.buttonADB.Font = new Font(Components.pfc.Families[0], 14.25F);*/
         }
         private void button_Meniu_Click(object sender, EventArgs e)
         {
