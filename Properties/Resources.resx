@@ -148,6 +148,9 @@
   <data name="Buton_Teste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Buton Teste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CifreleUnuiNumar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\CifreleUnuiNumar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Citire" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Citire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -156,6 +159,12 @@
   </data>
   <data name="DivideEtImpera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\DivideEtImpera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Divizibilitate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Divizibilitate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fibonacci" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Fibonacci.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Grafuri1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Grafuri1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -198,6 +207,12 @@
   </data>
   <data name="Subprogram" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Subprogram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SumaDiferenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\SumaDiferenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SumaDiferenta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\SumaDiferenta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TablouriBidimensionale" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\TablouriBidimensionale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

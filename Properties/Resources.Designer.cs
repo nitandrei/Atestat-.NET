@@ -19,7 +19,7 @@ namespace Atestat.NET.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -163,6 +163,16 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CifreleUnuiNumar {
+            get {
+                object obj = ResourceManager.GetObject("CifreleUnuiNumar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Citire {
             get {
                 object obj = ResourceManager.GetObject("Citire", resourceCulture);
@@ -186,6 +196,26 @@ namespace Atestat.NET.Properties {
         internal static System.Drawing.Bitmap DivideEtImpera {
             get {
                 object obj = ResourceManager.GetObject("DivideEtImpera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Divizibilitate {
+            get {
+                object obj = ResourceManager.GetObject("Divizibilitate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fibonacci {
+            get {
+                object obj = ResourceManager.GetObject("Fibonacci", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +356,26 @@ namespace Atestat.NET.Properties {
         internal static System.Drawing.Bitmap Subprogram {
             get {
                 object obj = ResourceManager.GetObject("Subprogram", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SumaDiferenta {
+            get {
+                object obj = ResourceManager.GetObject("SumaDiferenta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SumaDiferenta1 {
+            get {
+                object obj = ResourceManager.GetObject("SumaDiferenta1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
