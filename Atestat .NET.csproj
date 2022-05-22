@@ -95,6 +95,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Backtracking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Backtracking.Designer.cs">
+      <DependentUpon>Backtracking.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\CifreleUnuiNumar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,6 +137,12 @@
     <Compile Include="UserControls\Grafuri2.Designer.cs">
       <DependentUpon>Grafuri2.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Greedy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Greedy.Designer.cs">
+      <DependentUpon>Greedy.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Instructiuni.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +160,12 @@
     </Compile>
     <Compile Include="UserControls\Liste2.Designer.cs">
       <DependentUpon>Liste2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProgramareDinamica.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProgramareDinamica.Designer.cs">
+      <DependentUpon>ProgramareDinamica.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Recursivitate.cs">
       <SubType>UserControl</SubType>
@@ -247,6 +265,9 @@
     <EmbeddedResource Include="UserControls\AlgoritmiDeBaza.resx">
       <DependentUpon>AlgoritmiDeBaza.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Backtracking.resx">
+      <DependentUpon>Backtracking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CifreleUnuiNumar.resx">
       <DependentUpon>CifreleUnuiNumar.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +289,9 @@
     <EmbeddedResource Include="UserControls\Grafuri2.resx">
       <DependentUpon>Grafuri2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Greedy.resx">
+      <DependentUpon>Greedy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Instructiuni.resx">
       <DependentUpon>Instructiuni.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\MetodeDeProgramare.resx">
       <DependentUpon>MetodeDeProgramare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProgramareDinamica.resx">
+      <DependentUpon>ProgramareDinamica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Recursivitate.resx">
       <DependentUpon>Recursivitate.cs</DependentUpon>
@@ -450,6 +477,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\SumaDiferenta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Backtracking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Greedy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DivideEtImpera2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ProgramareDinamica.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

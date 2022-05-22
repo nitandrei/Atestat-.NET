@@ -63,6 +63,16 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Backtracking {
+            get {
+                object obj = ResourceManager.GetObject("Backtracking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Buton_ADB {
             get {
                 object obj = ResourceManager.GetObject("Buton_ADB", resourceCulture);
@@ -203,6 +213,26 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DivideEtImpera1 {
+            get {
+                object obj = ResourceManager.GetObject("DivideEtImpera1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DivideEtImpera2 {
+            get {
+                object obj = ResourceManager.GetObject("DivideEtImpera2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Divizibilitate {
             get {
                 object obj = ResourceManager.GetObject("Divizibilitate", resourceCulture);
@@ -236,6 +266,16 @@ namespace Atestat.NET.Properties {
         internal static System.Drawing.Bitmap Grafuri2 {
             get {
                 object obj = ResourceManager.GetObject("Grafuri2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Greedy {
+            get {
+                object obj = ResourceManager.GetObject("Greedy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -307,6 +347,16 @@ namespace Atestat.NET.Properties {
             get {
                 object obj = ResourceManager.GetObject("Oswald", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ProgramareDinamica {
+            get {
+                object obj = ResourceManager.GetObject("ProgramareDinamica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

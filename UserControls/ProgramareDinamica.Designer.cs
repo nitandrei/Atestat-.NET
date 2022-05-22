@@ -1,7 +1,7 @@
 ﻿
 namespace Atestat.NET.UserControls
 {
-    partial class DivideEtImpera
+    partial class ProgramareDinamica
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace Atestat.NET.UserControls
         {
             this.SuspendLayout();
             // 
-            // DivideEtImpera
+            // ProgramareDinamica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Atestat.NET.Properties.Resources.DivideEtImpera2;
+            this.BackgroundImage = global::Atestat.NET.Properties.Resources.ProgramareDinamica;
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "DivideEtImpera";
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.Name = "ProgramareDinamica";
             this.Size = new System.Drawing.Size(1280, 720);
             this.ResumeLayout(false);
 
