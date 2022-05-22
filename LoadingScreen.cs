@@ -46,10 +46,11 @@ namespace Atestat.NET
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (LoadingBar.Value >= 60 && init == false)
+            timer1.Stop();
+            if(LoadingBar.Value >= 60 && init == false)
             {
-                Components.initComponents();
                 init = true;
+                Components.initComponents();
             }
             if (LoadingBar.Value >= 95)
             {
@@ -59,6 +60,7 @@ namespace Atestat.NET
                 this.Close();
             }    
             else LoadingBar.Value += 5;
+            timer1.Start();
         }
     }
 }
