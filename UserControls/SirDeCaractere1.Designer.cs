@@ -1,7 +1,7 @@
 ﻿
 namespace Atestat.NET.UserControls
 {
-    partial class TablouriUnidimensionale
+    partial class SirDeCaractere1
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace Atestat.NET.UserControls
         {
             this.SuspendLayout();
             // 
-            // TablouriUnidimensionale
+            // SirDeCaractere1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Atestat.NET.Properties.Resources.TablouriUnidimensionale;
+            this.BackgroundImage = global::Atestat.NET.Properties.Resources.SirCaractere1;
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.Name = "TablouriUnidimensionale";
+            this.Name = "SirDeCaractere1";
             this.Size = new System.Drawing.Size(1280, 720);
             this.ResumeLayout(false);
 

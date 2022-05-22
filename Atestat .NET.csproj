@@ -101,6 +101,66 @@
     <Compile Include="UserControls\Citirea.Designer.cs">
       <DependentUpon>Citirea.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Grafuri1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Grafuri1.Designer.cs">
+      <DependentUpon>Grafuri1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Grafuri2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Grafuri2.Designer.cs">
+      <DependentUpon>Grafuri2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Liste1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Liste1.Designer.cs">
+      <DependentUpon>Liste1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Liste2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Liste2.Designer.cs">
+      <DependentUpon>Liste2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Recursivitate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Recursivitate.Designer.cs">
+      <DependentUpon>Recursivitate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SirDeCaractere1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SirDeCaractere1.Designer.cs">
+      <DependentUpon>SirDeCaractere1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SirDeCaractere2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SirDeCaractere2.Designer.cs">
+      <DependentUpon>SirDeCaractere2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SirDeCaractere3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SirDeCaractere3.Designer.cs">
+      <DependentUpon>SirDeCaractere3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Subprogram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Subprogram.Designer.cs">
+      <DependentUpon>Subprogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TablouriBidimensionale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TablouriBidimensionale.Designer.cs">
+      <DependentUpon>TablouriBidimensionale.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\TablouriUnidimensionale.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -163,8 +223,41 @@
     <EmbeddedResource Include="UserControls\DivideEtImpera.resx">
       <DependentUpon>DivideEtImpera.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Grafuri1.resx">
+      <DependentUpon>Grafuri1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Grafuri2.resx">
+      <DependentUpon>Grafuri2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Liste1.resx">
+      <DependentUpon>Liste1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Liste2.resx">
+      <DependentUpon>Liste2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\MetodeDeProgramare.resx">
       <DependentUpon>MetodeDeProgramare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Recursivitate.resx">
+      <DependentUpon>Recursivitate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SirDeCaractere1.resx">
+      <DependentUpon>SirDeCaractere1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SirDeCaractere2.resx">
+      <DependentUpon>SirDeCaractere2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SirDeCaractere3.resx">
+      <DependentUpon>SirDeCaractere3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Subprogram.resx">
+      <DependentUpon>Subprogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TablouriBidimensionale.resx">
+      <DependentUpon>TablouriBidimensionale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TablouriUnidimensionale.resx">
+      <DependentUpon>TablouriUnidimensionale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Teorie.resx">
       <DependentUpon>Teorie.cs</DependentUpon>
@@ -257,6 +350,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Citire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TablouriUnidimensionale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TablouriBidimensionale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SirCaractere1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SirCaractere2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SirCaractere3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Subprogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Recursivitate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Liste1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Liste2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Grafuri1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Grafuri2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

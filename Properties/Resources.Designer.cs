@@ -183,6 +183,46 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Grafuri1 {
+            get {
+                object obj = ResourceManager.GetObject("Grafuri1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Grafuri2 {
+            get {
+                object obj = ResourceManager.GetObject("Grafuri2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Liste1 {
+            get {
+                object obj = ResourceManager.GetObject("Liste1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Liste2 {
+            get {
+                object obj = ResourceManager.GetObject("Liste2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LoadingScreen {
             get {
                 object obj = ResourceManager.GetObject("LoadingScreen", resourceCulture);
@@ -206,6 +246,76 @@ namespace Atestat.NET.Properties {
         internal static System.Drawing.Bitmap MetodeDeProgramareOriginal {
             get {
                 object obj = ResourceManager.GetObject("MetodeDeProgramareOriginal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recursivitate {
+            get {
+                object obj = ResourceManager.GetObject("Recursivitate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SirCaractere1 {
+            get {
+                object obj = ResourceManager.GetObject("SirCaractere1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SirCaractere2 {
+            get {
+                object obj = ResourceManager.GetObject("SirCaractere2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SirCaractere3 {
+            get {
+                object obj = ResourceManager.GetObject("SirCaractere3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Subprogram {
+            get {
+                object obj = ResourceManager.GetObject("Subprogram", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TablouriBidimensionale {
+            get {
+                object obj = ResourceManager.GetObject("TablouriBidimensionale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TablouriUnidimensionale {
+            get {
+                object obj = ResourceManager.GetObject("TablouriUnidimensionale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

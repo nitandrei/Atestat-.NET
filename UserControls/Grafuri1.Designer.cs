@@ -1,7 +1,7 @@
 ﻿
 namespace Atestat.NET.UserControls
 {
-    partial class TablouriUnidimensionale
+    partial class Grafuri1
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,14 +31,13 @@ namespace Atestat.NET.UserControls
         {
             this.SuspendLayout();
             // 
-            // TablouriUnidimensionale
+            // Grafuri1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Atestat.NET.Properties.Resources.TablouriUnidimensionale;
-            this.DoubleBuffered = true;
+            this.BackgroundImage = global::Atestat.NET.Properties.Resources.Grafuri1;
             this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.Name = "TablouriUnidimensionale";
+            this.Name = "Grafuri1";
             this.Size = new System.Drawing.Size(1280, 720);
             this.ResumeLayout(false);
 
