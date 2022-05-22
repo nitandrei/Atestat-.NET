@@ -33,12 +33,13 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.timer_Meniu = new System.Windows.Forms.Timer(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonADB = new System.Windows.Forms.Button();
             this.codeEducationLogo = new System.Windows.Forms.PictureBox();
             this.button_Meniu = new System.Windows.Forms.Button();
             this.buttonTeorie = new System.Windows.Forms.Button();
             this.buttonMDP = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.codeEducationLogo)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +47,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkOrchid;
+            this.panel1.Controls.Add(this.buttonADB);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.codeEducationLogo);
             this.panel1.Controls.Add(this.button4);
@@ -83,6 +85,34 @@
             // 
             this.timer_Meniu.Interval = 10;
             this.timer_Meniu.Tick += new System.EventHandler(this.timer_Meniu_Tick);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(228)))), ((int)(((byte)(37)))));
+            this.panel3.Location = new System.Drawing.Point(1, 721);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(7, 73);
+            this.panel3.TabIndex = 8;
+            // 
+            // buttonADB
+            // 
+            this.buttonADB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonADB.FlatAppearance.BorderSize = 0;
+            this.buttonADB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonADB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonADB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonADB.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonADB.Image = global::Atestat.NET.Properties.Resources.Buton_ADB;
+            this.buttonADB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonADB.Location = new System.Drawing.Point(12, 213);
+            this.buttonADB.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonADB.Name = "buttonADB";
+            this.buttonADB.Size = new System.Drawing.Size(166, 73);
+            this.buttonADB.TabIndex = 9;
+            this.buttonADB.Text = "Metode de \r\nprogramare";
+            this.buttonADB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonADB.UseVisualStyleBackColor = true;
             // 
             // codeEducationLogo
             // 
@@ -177,15 +207,6 @@
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(228)))), ((int)(((byte)(37)))));
-            this.panel3.Location = new System.Drawing.Point(1, 721);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(7, 73);
-            this.panel3.TabIndex = 8;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,6 +238,7 @@
         private System.Windows.Forms.Timer timer_Meniu;
         private System.Windows.Forms.PictureBox codeEducationLogo;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button buttonADB;
     }
 }
 
