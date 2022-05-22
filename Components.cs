@@ -19,7 +19,7 @@ namespace Atestat.NET
     public static class Components
     {
         /// <summary>
-        /// Visuals
+        /// Visuals/Controls
         /// </summary>
         public static MainForm mainForm;
         public static Panel panelLeft;
@@ -36,6 +36,11 @@ namespace Atestat.NET
         private const string txtFile = "Intrebari.txt";
         public static string[] questions;
         private static string pathToFolder;
+        /// <summary>
+        /// Controls state sizes
+        /// </summary>
+        public static int panelLeftInitialWidth;
+        public const int panelLeftCollapsedWidth = 75;
         /// <summary>
         /// Custom Fonts
         /// </summary>
@@ -64,10 +69,12 @@ namespace Atestat.NET
             userControl.Hide();
             panelRight.Controls.Remove(userControl);
             userControl.Dispose();
-            userControl.BackgroundImage.Dispose();
+            if(userControl.BackgroundImage != null)
+                userControl.BackgroundImage.Dispose();
             foreach (Control c in userControl.Controls)
             {
-                c.BackgroundImage.Dispose();
+                if(c.BackgroundImage != null)
+                    c.BackgroundImage.Dispose();
             }
         }
         public static void CleanPanel()
@@ -152,6 +159,12 @@ namespace Atestat.NET
              Marshal.Copy(fontdata, 0, data, fontLength);
              pfc.AddMemoryFont(data, fontLength);
          }*/
+
+        public static void initComponents()
+        {
+            Components.initQuestions();
+            Components.mainForm = new MainForm();
+        }
         static Components()
         {
 

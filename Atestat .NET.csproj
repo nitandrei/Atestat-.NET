@@ -81,6 +81,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components.cs" />
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     <Compile Include="WelcomeForm.Designer.cs">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +224,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\DivideEtImpera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton MDP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton Meniu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Code.Education Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\LoadingScreen.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

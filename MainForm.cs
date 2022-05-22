@@ -14,15 +14,41 @@ namespace Atestat.NET
 {
     public partial class MainForm : Form
     {
+        private bool strans = false;
         public MainForm()
         {
             InitializeComponent();
             Components.panelLeft = this.panel1;
             Components.panelRight = this.panel2;
+            Components.panelLeftInitialWidth = this.panel1.Width;
             //fac un UserControl cu instructiuni, care apoi isi ia delete oricum
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void button_Meniu_Click(object sender, EventArgs e)
         {
+            timer_Meniu.Start();
+        }
+        private void timer_Meniu_Tick(object sender, EventArgs e)
+        {
+            if(!strans)
+            {
+                Components.panelLeft.Width -= 5;
+                if(Components.panelLeft.Width <= Components.panelLeftCollapsedWidth)
+                {
+                    timer_Meniu.Stop();
+                    strans = true;
+                    this.Refresh();
+                }
+            }
+            else
+            {
+                Components.panelLeft.Width += 5;
+                if (Components.panelLeft.Width >= Components.panelLeftInitialWidth)
+                {
+                    timer_Meniu.Stop();
+                    strans = false;
+                    this.Refresh();
+                }
+            }
         }
         private void button2_Click(object sender, EventArgs e)
         {

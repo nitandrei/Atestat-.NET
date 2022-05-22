@@ -16,8 +16,8 @@ namespace Atestat.NET
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new LoadingScreen());
             Application.Run(new WelcomeForm());
-            Components.mainForm = new MainForm();
             Application.Run(Components.mainForm);
         }
     }
