@@ -24,6 +24,7 @@ namespace Atestat.NET
         public static MainForm mainForm;
         public static Panel panelLeft;
         public static Panel panelRight;
+        public static Panel panelMini;
         public static MetodeDeProgramare metodeDeProgramare;
         public static Teorie teorie;
         public static DivideEtImpera divideEtImpera;

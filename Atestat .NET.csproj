@@ -237,5 +237,8 @@
   <ItemGroup>
     <None Include="Images\LoadingScreen.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton Teorie.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

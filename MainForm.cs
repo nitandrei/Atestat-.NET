@@ -20,6 +20,7 @@ namespace Atestat.NET
             InitializeComponent();
             Components.panelLeft = this.panel1;
             Components.panelRight = this.panel2;
+            Components.panelMini = this.panel3;
             Components.panelLeftInitialWidth = this.panel1.Width;
             //fac un UserControl cu instructiuni, care apoi isi ia delete oricum
         }
@@ -50,13 +51,15 @@ namespace Atestat.NET
                 }
             }
         }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Components.Show(ref Components.metodeDeProgramare, true);
-        }
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonTeorie_Click(object sender, EventArgs e)
         {
             Components.Show(ref Components.teorie, true);
+            updatePanelMini(sender as Button);
+        }
+        private void buttonMDP_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.metodeDeProgramare, true);
+            updatePanelMini(sender as Button);
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -65,6 +68,12 @@ namespace Atestat.NET
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void updatePanelMini(Button button)
+        {
+            int oldX = Components.panelMini.Location.X;
+            int newY = button.Location.Y;
+            Components.panelMini.Location = new Point(oldX, newY);
         }
         //magie?
         protected override CreateParams CreateParams
