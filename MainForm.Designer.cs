@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.timer_Meniu = new System.Windows.Forms.Timer(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonTeste = new System.Windows.Forms.Button();
             this.buttonADB = new System.Windows.Forms.Button();
             this.codeEducationLogo = new System.Windows.Forms.PictureBox();
             this.button_Meniu = new System.Windows.Forms.Button();
@@ -47,10 +47,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkOrchid;
+            this.panel1.Controls.Add(this.buttonTeste);
             this.panel1.Controls.Add(this.buttonADB);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.codeEducationLogo);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button_Meniu);
             this.panel1.Controls.Add(this.buttonTeorie);
             this.panel1.Controls.Add(this.buttonMDP);
@@ -61,15 +61,14 @@
             this.panel1.Size = new System.Drawing.Size(200, 720);
             this.panel1.TabIndex = 1;
             // 
-            // button4
+            // panel3
             // 
-            this.button4.Location = new System.Drawing.Point(54, 398);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(228)))), ((int)(((byte)(37)))));
+            this.panel3.Location = new System.Drawing.Point(1, 721);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(7, 73);
+            this.panel3.TabIndex = 8;
             // 
             // panel2
             // 
@@ -86,14 +85,25 @@
             this.timer_Meniu.Interval = 10;
             this.timer_Meniu.Tick += new System.EventHandler(this.timer_Meniu_Tick);
             // 
-            // panel3
+            // buttonTeste
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(228)))), ((int)(((byte)(37)))));
-            this.panel3.Location = new System.Drawing.Point(1, 721);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(7, 73);
-            this.panel3.TabIndex = 8;
+            this.buttonTeste.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTeste.FlatAppearance.BorderSize = 0;
+            this.buttonTeste.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonTeste.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonTeste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTeste.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTeste.Image = global::Atestat.NET.Properties.Resources.Buton_Teste;
+            this.buttonTeste.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTeste.Location = new System.Drawing.Point(12, 286);
+            this.buttonTeste.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonTeste.Name = "buttonTeste";
+            this.buttonTeste.Size = new System.Drawing.Size(170, 73);
+            this.buttonTeste.TabIndex = 10;
+            this.buttonTeste.Text = "Teste de    \r\nantrenament";
+            this.buttonTeste.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonTeste.UseVisualStyleBackColor = true;
+            this.buttonTeste.Click += new System.EventHandler(this.buttonTeste_Click);
             // 
             // buttonADB
             // 
@@ -110,9 +120,10 @@
             this.buttonADB.Name = "buttonADB";
             this.buttonADB.Size = new System.Drawing.Size(166, 73);
             this.buttonADB.TabIndex = 9;
-            this.buttonADB.Text = "Metode de \r\nprogramare";
+            this.buttonADB.Text = "Algoritmi de\r\nbaza      ";
             this.buttonADB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonADB.UseVisualStyleBackColor = true;
+            this.buttonADB.Click += new System.EventHandler(this.buttonADB_Click);
             // 
             // codeEducationLogo
             // 
@@ -155,7 +166,7 @@
             this.buttonTeorie.Font = new System.Drawing.Font("Oswald", 14.25F);
             this.buttonTeorie.Image = global::Atestat.NET.Properties.Resources.Buton_Teorie;
             this.buttonTeorie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTeorie.Location = new System.Drawing.Point(12, 140);
+            this.buttonTeorie.Location = new System.Drawing.Point(12, 67);
             this.buttonTeorie.Margin = new System.Windows.Forms.Padding(0);
             this.buttonTeorie.Name = "buttonTeorie";
             this.buttonTeorie.Size = new System.Drawing.Size(147, 73);
@@ -175,7 +186,7 @@
             this.buttonMDP.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMDP.Image = global::Atestat.NET.Properties.Resources.Buton_MDP;
             this.buttonMDP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMDP.Location = new System.Drawing.Point(12, 67);
+            this.buttonMDP.Location = new System.Drawing.Point(12, 140);
             this.buttonMDP.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMDP.Name = "buttonMDP";
             this.buttonMDP.Size = new System.Drawing.Size(166, 73);
@@ -234,11 +245,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonTeorie;
         private System.Windows.Forms.Button button_Meniu;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Timer timer_Meniu;
         private System.Windows.Forms.PictureBox codeEducationLogo;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonADB;
+        private System.Windows.Forms.Button buttonTeste;
     }
 }
 

@@ -61,9 +61,13 @@ namespace Atestat.NET
             Components.Show(ref Components.metodeDeProgramare, true);
             updatePanelMini(sender as Button);
         }
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonADB_Click(object sender, EventArgs e)
         {
-            Components.Show(ref Components.teste, true);
+            updatePanelMini(sender as Button);
+        }
+        private void buttonTeste_Click(object sender, EventArgs e)
+        {
+            updatePanelMini(sender as Button);
         }
         private void buttonExit_Click(object sender, EventArgs e)
         {
