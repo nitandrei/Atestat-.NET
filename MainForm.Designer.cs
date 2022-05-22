@@ -191,7 +191,7 @@
             this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.White;
             this.buttonExit.Image = global::Atestat.NET.Properties.Resources.Buton_Exit;
             this.buttonExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
