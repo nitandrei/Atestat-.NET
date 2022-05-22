@@ -1,5 +1,4 @@
-﻿
-namespace Atestat.NET.UserControls
+﻿namespace Atestat.NET.UserControls
 {
     partial class Backtracking
     {
