@@ -21,22 +21,25 @@ namespace Atestat.NET
             Components.panelRight = this.panel2;
             //fac un UserControl cu instructiuni, care apoi isi ia delete oricum
         }
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             Components.Show(ref Components.metodeDeProgramare, true);
         }
-
-
         private void button3_Click(object sender, EventArgs e)
         {
             Components.Show(ref Components.teorie, true);
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.teste, true);
         }
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         //magie?
         protected override CreateParams CreateParams
         {

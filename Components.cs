@@ -18,13 +18,29 @@ namespace Atestat.NET
 {
     public static class Components
     {
+        /// <summary>
+        /// Visuals
+        /// </summary>
         public static MainForm mainForm;
         public static Panel panelLeft;
         public static Panel panelRight;
         public static MetodeDeProgramare metodeDeProgramare;
         public static Teorie teorie;
         public static DivideEtImpera divideEtImpera;
+        public static Teste teste;
+        /// <summary>
+        /// Teste, formatul este "Nume_poze.extensie,numarul_variantei_corecte" EX: Poza.png,1
+        /// </summary>
+        public const int numberOfQuestions = 10;
+        private const string localFolder = "Teste";
+        private const string txtFile = "Intrebari.txt";
+        public static string[] questions;
+        private static string pathToFolder;
+        /// <summary>
+        /// Custom Fonts
+        /// </summary>
         public static PrivateFontCollection pfc;
+
         public static void Show<T>(ref T userControl, bool cleanPanel) where T : UserControl
         {
             panelRight.SuspendLayout();
@@ -34,7 +50,7 @@ namespace Atestat.NET
             {
                 userControl = (T)Activator.CreateInstance(typeof(T));
             }
-            if(cleanPanel == true)
+            if (cleanPanel == true)
                 CleanPanel();
             panelRight.Controls.Add(userControl);
             userControl.BringToFront();
@@ -64,6 +80,65 @@ namespace Atestat.NET
                 UserControl userControl = (UserControl)Components.panelRight.Controls[--i];
                 Components.Hide(ref userControl);
             }
+        }
+        public static void initQuestions()
+        {
+            int line = 0;
+            pathToFolder = Path.Combine(AppContext.BaseDirectory, localFolder);
+            if(!Directory.Exists(pathToFolder))
+            {
+                MessageBox.Show("Fisierul " + Components.pathToFolder + " nu exista\n" +
+                                "Aplicatia se va inchide!");
+                Environment.Exit(0);
+            }
+            string pathToTxt = Path.Combine(pathToFolder, txtFile);
+            if (!File.Exists(pathToTxt))
+            {
+                MessageBox.Show("Fisierul "+ Components.txtFile + " nu exista\n"+
+                                "Aplicatia se va inchide!");
+                Environment.Exit(0);
+            }
+            questions = File.ReadAllLines(pathToTxt);
+            if(questions.Length < Components.numberOfQuestions)
+            {
+                MessageBox.Show("Nu sunt suficiente intrebari!\n"+
+                                "Minimul este "+Components.numberOfQuestions+'\n'+
+                                "Aplicatia se va inchide!");
+                Environment.Exit(0);
+            }
+            foreach (string question in questions)
+            {
+                line++;
+                string[] temp = question.Split(',');
+                if (temp.Length != 2)
+                {
+                    MessageBox.Show("A aparut o problema la linia " + line +'\n'+
+                                    "Numarul de argumente este nepotrivit\n"+
+                                    "Aplicatia se va inchide!");
+                    Environment.Exit(0);
+                }
+                if ( !File.Exists(Path.Combine(pathToFolder, temp[0])) )
+                {
+                    MessageBox.Show("A aparut o problema la linia " + line + '\n' +
+                                    "Fisierul " + temp[0] + " nu exista\n" +
+                                    "Aplicatia se va inchide!");
+                    Environment.Exit(0);
+                }
+                int myInt;
+                bool isNumerical = int.TryParse(temp[1], out myInt);
+                if( !(isNumerical && 1 <= myInt && myInt <=4) )
+                {
+                    MessageBox.Show("A aparut o problema la linia " + line + '\n' +
+                                    temp[1] + " nu este conform parametrilor\n" +
+                                    "Aplicatia se va inchide!");
+                    Environment.Exit(0);
+                }
+            }
+        }
+        public static void randomizeQuestions()
+        {
+            var rnd = new Random();
+            questions = questions.OrderBy(question => rnd.Next()).ToArray();
         }
 
         //Add font to resources, then reference it here
