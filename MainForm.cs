@@ -38,14 +38,13 @@ namespace Atestat.NET
         }
         private void timer_Meniu_Tick(object sender, EventArgs e)
         {
-            if(!strans)
+            if (!strans)
             {
                 Components.panelLeft.Width -= 5;
                 if(Components.panelLeft.Width <= Components.panelLeftCollapsedWidth)
                 {
                     timer_Meniu.Stop();
                     strans = true;
-                    this.Refresh();
                 }
             }
             else
@@ -55,7 +54,6 @@ namespace Atestat.NET
                 {
                     timer_Meniu.Stop();
                     strans = false;
-                    this.Refresh();
                 }
             }
         }
