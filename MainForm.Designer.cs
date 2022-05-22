@@ -30,17 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.buttonADB = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.codeEducationLogo = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.button_Meniu = new System.Windows.Forms.Button();
             this.buttonTeorie = new System.Windows.Forms.Button();
             this.buttonMDP = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.timer_Meniu = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.codeEducationLogo)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +51,6 @@
             this.panel1.Controls.Add(this.buttonADB);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.codeEducationLogo);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button_Meniu);
             this.panel1.Controls.Add(this.buttonTeorie);
             this.panel1.Controls.Add(this.buttonMDP);
@@ -62,6 +60,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 720);
             this.panel1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Atestat.NET.Properties.Resources.Buton_ADB;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(12, 286);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(166, 73);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Metode de \r\nprogramare";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // buttonADB
             // 
@@ -103,16 +120,6 @@
             this.codeEducationLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.codeEducationLogo.TabIndex = 7;
             this.codeEducationLogo.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(54, 398);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button_Meniu
             // 
@@ -180,7 +187,7 @@
             this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.Font = new System.Drawing.Font("Oswald", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.White;
             this.buttonExit.Image = global::Atestat.NET.Properties.Resources.Buton_Exit;
             this.buttonExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -209,25 +216,6 @@
             this.timer_Meniu.Interval = 15;
             this.timer_Meniu.Tick += new System.EventHandler(this.timer_Meniu_Tick);
             // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::Atestat.NET.Properties.Resources.Buton_ADB;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 286);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 73);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Metode de \r\nprogramare";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,7 +243,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonTeorie;
         private System.Windows.Forms.Button button_Meniu;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Timer timer_Meniu;
         private System.Windows.Forms.PictureBox codeEducationLogo;
         private System.Windows.Forms.Panel panel3;

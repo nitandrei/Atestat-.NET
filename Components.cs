@@ -39,10 +39,11 @@ namespace Atestat.NET
         public static string[] questions;
         private static string pathToFolder;
         /// <summary>
-        /// Controls state sizes
+        /// Controls constants
         /// </summary>
         public static int panelLeftInitialWidth;
         public const int panelLeftCollapsedWidth = 75;
+        public static Font Oswald;
         /// <summary>
         /// Custom Fonts
         /// </summary>
@@ -152,19 +153,21 @@ namespace Atestat.NET
 
         //Add font to resources, then reference it here
         //USE: Components.pfc.Families[0]
-        /* public static void initializeFont() //may be unsafe?
+        public static void initializeFont() //may be unsafe?
          {
-             pfc = new PrivateFontCollection();
-             int fontLength = Resources.FONT.Length;
-             byte[] fontdata = Resources.FONT;
-             IntPtr data = Marshal.AllocCoTaskMem(fontLength);
-             Marshal.Copy(fontdata, 0, data, fontLength);
-             pfc.AddMemoryFont(data, fontLength);
-         }*/
+            pfc = new PrivateFontCollection();
+            int fontLength = Resources.Oswald.Length;
+            byte[] fontdata = Resources.Oswald;
+            IntPtr data = Marshal.AllocCoTaskMem(fontLength);
+            Marshal.Copy(fontdata, 0, data, fontLength);
+            pfc.AddMemoryFont(data, fontLength);
+            Components.Oswald = new Font(Components.pfc.Families[0], 14.25F);
+         }
 
         public static void initComponents()
         {
             Components.initQuestions();
+            Components.initializeFont();
             Components.mainForm = new MainForm();
         }
         static Components()

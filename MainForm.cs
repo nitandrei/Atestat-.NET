@@ -22,6 +22,10 @@ namespace Atestat.NET
             Components.panelRight = this.panel2;
             Components.panelMini = this.panel3;
             Components.panelLeftInitialWidth = this.panel1.Width;
+            this.buttonTeorie.Font = Components.Oswald;
+            this.buttonExit.Font = Components.Oswald;
+            this.buttonMDP.Font = Components.Oswald;
+            this.buttonADB.Font = Components.Oswald;
             //fac un UserControl cu instructiuni, care apoi isi ia delete oricum
         }
         private void button_Meniu_Click(object sender, EventArgs e)
@@ -60,10 +64,6 @@ namespace Atestat.NET
         {
             Components.Show(ref Components.metodeDeProgramare, true);
             updatePanelMini(sender as Button);
-        }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Components.Show(ref Components.teste, true);
         }
         private void buttonExit_Click(object sender, EventArgs e)
         {

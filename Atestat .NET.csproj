@@ -113,6 +113,12 @@
     <Compile Include="UserControls\Grafuri2.Designer.cs">
       <DependentUpon>Grafuri2.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Instructiuni.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Instructiuni.Designer.cs">
+      <DependentUpon>Instructiuni.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Liste1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     <EmbeddedResource Include="UserControls\Grafuri2.resx">
       <DependentUpon>Grafuri2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Instructiuni.resx">
+      <DependentUpon>Instructiuni.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Liste1.resx">
       <DependentUpon>Liste1.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +278,7 @@
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Atestat .NET_TemporaryKey.pfx" />
+    <None Include="Fonts\Oswald.ttf" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
