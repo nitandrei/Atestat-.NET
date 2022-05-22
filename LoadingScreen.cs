@@ -57,10 +57,14 @@ namespace Atestat.NET
                 this.timer1.Stop();
                 LoadingBar.Refresh();
                 Thread.Sleep(200);
+                timer1.Dispose();
                 this.Close();
-            }    
-            else LoadingBar.Value += 5;
-            timer1.Start();
+            }
+            else
+            {
+                LoadingBar.Value += 5;
+                timer1.Start();
+            }
         }
     }
 }

@@ -206,7 +206,7 @@
             // 
             // timer_Meniu
             // 
-            this.timer_Meniu.Interval = 10;
+            this.timer_Meniu.Interval = 15;
             this.timer_Meniu.Tick += new System.EventHandler(this.timer_Meniu_Tick);
             // 
             // button1

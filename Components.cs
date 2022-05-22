@@ -27,6 +27,7 @@ namespace Atestat.NET
         public static Panel panelMini;
         public static MetodeDeProgramare metodeDeProgramare;
         public static Teorie teorie;
+        public static Citirea citirea;
         public static DivideEtImpera divideEtImpera;
         public static Teste teste;
         /// <summary>

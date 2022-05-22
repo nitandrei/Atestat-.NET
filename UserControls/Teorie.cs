@@ -24,5 +24,10 @@ namespace Atestat.NET.UserControls
         {
             (sender as Button).BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_Carte_Negru;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.citirea, false);
+        }
     }
 }
