@@ -18,6 +18,12 @@ namespace Atestat.NET
         public MainForm()
         {
             InitializeComponent();
+            init();
+            Components.Show(ref Components.instructiuni, false);
+        }
+
+        private void init()
+        {
             Components.panelLeft = this.panel1;
             Components.panelRight = this.panel2;
             Components.panelMini = this.panel3;
@@ -26,7 +32,6 @@ namespace Atestat.NET
             this.buttonExit.Font = Components.Oswald;
             this.buttonMDP.Font = Components.Oswald;
             this.buttonADB.Font = Components.Oswald;
-            //fac un UserControl cu instructiuni, care apoi isi ia delete oricum
         }
         private void button_Meniu_Click(object sender, EventArgs e)
         {
@@ -84,6 +89,11 @@ namespace Atestat.NET
                 cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
                 return cp;
             }
+        }
+
+        private void codeEducationLogo_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.instructiuni, true);
         }
     }
 }

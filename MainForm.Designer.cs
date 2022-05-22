@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.buttonADB = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.timer_Meniu = new System.Windows.Forms.Timer(this.components);
+            this.buttonTDA = new System.Windows.Forms.Button();
+            this.buttonADB = new System.Windows.Forms.Button();
             this.codeEducationLogo = new System.Windows.Forms.PictureBox();
             this.button_Meniu = new System.Windows.Forms.Button();
             this.buttonTeorie = new System.Windows.Forms.Button();
             this.buttonMDP = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.timer_Meniu = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.codeEducationLogo)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkOrchid;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonTDA);
             this.panel1.Controls.Add(this.buttonADB);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.codeEducationLogo);
@@ -61,24 +61,48 @@
             this.panel1.Size = new System.Drawing.Size(200, 720);
             this.panel1.TabIndex = 1;
             // 
-            // button1
+            // panel3
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::Atestat.NET.Properties.Resources.Buton_ADB;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 286);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 73);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Metode de \r\nprogramare";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(228)))), ((int)(((byte)(37)))));
+            this.panel3.Location = new System.Drawing.Point(1, 721);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(7, 73);
+            this.panel3.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1280, 720);
+            this.panel2.TabIndex = 2;
+            // 
+            // timer_Meniu
+            // 
+            this.timer_Meniu.Interval = 15;
+            this.timer_Meniu.Tick += new System.EventHandler(this.timer_Meniu_Tick);
+            // 
+            // buttonTDA
+            // 
+            this.buttonTDA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTDA.FlatAppearance.BorderSize = 0;
+            this.buttonTDA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonTDA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonTDA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTDA.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTDA.Image = global::Atestat.NET.Properties.Resources.Buton_Teste;
+            this.buttonTDA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTDA.Location = new System.Drawing.Point(12, 286);
+            this.buttonTDA.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonTDA.Name = "buttonTDA";
+            this.buttonTDA.Size = new System.Drawing.Size(170, 73);
+            this.buttonTDA.TabIndex = 10;
+            this.buttonTDA.Text = "Teste de    \r\nantrenament";
+            this.buttonTDA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonTDA.UseVisualStyleBackColor = true;
             // 
             // buttonADB
             // 
@@ -95,23 +119,15 @@
             this.buttonADB.Name = "buttonADB";
             this.buttonADB.Size = new System.Drawing.Size(166, 73);
             this.buttonADB.TabIndex = 9;
-            this.buttonADB.Text = "Metode de \r\nprogramare";
+            this.buttonADB.Text = "Algoritmi de\r\nbaza      ";
             this.buttonADB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonADB.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(228)))), ((int)(((byte)(37)))));
-            this.panel3.Location = new System.Drawing.Point(1, 721);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(7, 73);
-            this.panel3.TabIndex = 8;
             // 
             // codeEducationLogo
             // 
             this.codeEducationLogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.codeEducationLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.codeEducationLogo.Image = global::Atestat.NET.Properties.Resources.Code_Education_Logo;
             this.codeEducationLogo.Location = new System.Drawing.Point(7, 518);
             this.codeEducationLogo.Margin = new System.Windows.Forms.Padding(0);
@@ -120,6 +136,7 @@
             this.codeEducationLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.codeEducationLogo.TabIndex = 7;
             this.codeEducationLogo.TabStop = false;
+            this.codeEducationLogo.Click += new System.EventHandler(this.codeEducationLogo_Click);
             // 
             // button_Meniu
             // 
@@ -149,7 +166,7 @@
             this.buttonTeorie.Font = new System.Drawing.Font("Oswald", 14.25F);
             this.buttonTeorie.Image = global::Atestat.NET.Properties.Resources.Buton_Teorie;
             this.buttonTeorie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTeorie.Location = new System.Drawing.Point(12, 140);
+            this.buttonTeorie.Location = new System.Drawing.Point(12, 67);
             this.buttonTeorie.Margin = new System.Windows.Forms.Padding(0);
             this.buttonTeorie.Name = "buttonTeorie";
             this.buttonTeorie.Size = new System.Drawing.Size(147, 73);
@@ -169,7 +186,7 @@
             this.buttonMDP.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMDP.Image = global::Atestat.NET.Properties.Resources.Buton_MDP;
             this.buttonMDP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMDP.Location = new System.Drawing.Point(12, 67);
+            this.buttonMDP.Location = new System.Drawing.Point(12, 140);
             this.buttonMDP.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMDP.Name = "buttonMDP";
             this.buttonMDP.Size = new System.Drawing.Size(166, 73);
@@ -200,21 +217,6 @@
             this.buttonExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1280, 720);
-            this.panel2.TabIndex = 2;
-            // 
-            // timer_Meniu
-            // 
-            this.timer_Meniu.Interval = 15;
-            this.timer_Meniu.Tick += new System.EventHandler(this.timer_Meniu_Tick);
             // 
             // MainForm
             // 
@@ -247,7 +249,7 @@
         private System.Windows.Forms.PictureBox codeEducationLogo;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonADB;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonTDA;
     }
 }
 

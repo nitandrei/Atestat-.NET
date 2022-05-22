@@ -22,6 +22,7 @@ namespace Atestat.NET
         /// Visuals/Controls
         /// </summary>
         public static MainForm mainForm;
+        public static Instructiuni instructiuni;
         public static Panel panelLeft;
         public static Panel panelRight;
         public static Panel panelMini;
