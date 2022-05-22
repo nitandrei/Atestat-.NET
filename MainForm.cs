@@ -21,17 +21,16 @@ namespace Atestat.NET
             init();
             Components.Show(ref Components.instructiuni, false);
         }
-
         private void init()
         {
             Components.panelLeft = this.panel1;
             Components.panelRight = this.panel2;
             Components.panelMini = this.panel3;
             Components.panelLeftInitialWidth = this.panel1.Width;
-            this.buttonTeorie.Font = Components.Oswald;
-            this.buttonExit.Font = Components.Oswald;
-            this.buttonMDP.Font = Components.Oswald;
-            this.buttonADB.Font = Components.Oswald;
+            this.buttonTeorie.Font = new Font(Components.pfc.Families[0], 14.25F);
+            this.buttonExit.Font = new Font(Components.pfc.Families[0], 14.25F);
+            this.buttonMDP.Font = new Font(Components.pfc.Families[0], 14.25F);
+            this.buttonADB.Font = new Font(Components.pfc.Families[0], 14.25F);
         }
         private void button_Meniu_Click(object sender, EventArgs e)
         {
@@ -70,6 +69,20 @@ namespace Atestat.NET
             Components.Show(ref Components.metodeDeProgramare, true);
             updatePanelMini(sender as Button);
         }
+        private void buttonADB_Click(object sender, EventArgs e)
+        {
+            updatePanelMini(sender as Button);
+        }
+
+        private void buttonTDA_Click(object sender, EventArgs e)
+        {
+            updatePanelMini(sender as Button);
+        }
+        private void codeEducationLogo_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.instructiuni, true);
+            Components.panelMini.Location = new Point(Components.panelMini.Location.X, 721);
+        }
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -89,11 +102,6 @@ namespace Atestat.NET
                 cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
                 return cp;
             }
-        }
-
-        private void codeEducationLogo_Click(object sender, EventArgs e)
-        {
-            Components.Show(ref Components.instructiuni, true);
         }
     }
 }

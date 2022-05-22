@@ -103,6 +103,7 @@
             this.buttonTDA.Text = "Teste de    \r\nantrenament";
             this.buttonTDA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonTDA.UseVisualStyleBackColor = true;
+            this.buttonTDA.Click += new System.EventHandler(this.buttonTDA_Click);
             // 
             // buttonADB
             // 
@@ -122,6 +123,7 @@
             this.buttonADB.Text = "Algoritmi de\r\nbaza      ";
             this.buttonADB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonADB.UseVisualStyleBackColor = true;
+            this.buttonADB.Click += new System.EventHandler(this.buttonADB_Click);
             // 
             // codeEducationLogo
             // 
