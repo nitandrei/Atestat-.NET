@@ -29,8 +29,19 @@ namespace Atestat.NET.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Citirea
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Atestat.NET.Properties.Resources.Citire;
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.Name = "Citirea";
+            this.Size = new System.Drawing.Size(1280, 720);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

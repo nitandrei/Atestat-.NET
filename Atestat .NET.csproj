@@ -101,6 +101,12 @@
     <Compile Include="UserControls\Citirea.Designer.cs">
       <DependentUpon>Citirea.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\TablouriUnidimensionale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TablouriUnidimensionale.Designer.cs">
+      <DependentUpon>TablouriUnidimensionale.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Teste.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AlgoritmiDeBaza.resx">
       <DependentUpon>AlgoritmiDeBaza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Citirea.resx">
+      <DependentUpon>Citirea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DivideEtImpera.resx">
       <DependentUpon>DivideEtImpera.cs</DependentUpon>
@@ -247,7 +256,7 @@
     <None Include="Images\Buton Teorie.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Buton ADB.png" />
+    <None Include="Images\Citire.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
