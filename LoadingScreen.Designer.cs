@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.LoadingBar = new System.Windows.Forms.ProgressBar();
             this.GIFcontainer = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.GIFcontainer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,9 +39,9 @@
             // 
             this.LoadingBar.ForeColor = System.Drawing.Color.Purple;
             this.LoadingBar.Location = new System.Drawing.Point(0, 400);
-            this.LoadingBar.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.LoadingBar.Margin = new System.Windows.Forms.Padding(0);
             this.LoadingBar.Name = "LoadingBar";
-            this.LoadingBar.Size = new System.Drawing.Size(800, 20);
+            this.LoadingBar.Size = new System.Drawing.Size(941, 20);
             this.LoadingBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.LoadingBar.TabIndex = 1;
             // 
@@ -52,6 +54,11 @@
             this.GIFcontainer.Size = new System.Drawing.Size(800, 400);
             this.GIFcontainer.TabIndex = 0;
             this.GIFcontainer.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // LoadingScreen
             // 
@@ -66,6 +73,8 @@
             this.Name = "LoadingScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoadingScreen";
+            this.Activated += new System.EventHandler(this.LoadingScreen_Activated);
+            this.Validated += new System.EventHandler(this.LoadingScreen_Validated);
             ((System.ComponentModel.ISupportInitialize)(this.GIFcontainer)).EndInit();
             this.ResumeLayout(false);
 
@@ -75,5 +84,6 @@
 
         private System.Windows.Forms.PictureBox GIFcontainer;
         private System.Windows.Forms.ProgressBar LoadingBar;
+        private System.Windows.Forms.Timer timer1;
     }
 }
