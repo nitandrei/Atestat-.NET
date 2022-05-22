@@ -95,6 +95,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Citirea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Citirea.Designer.cs">
+      <DependentUpon>Citirea.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Teste.cs">
       <SubType>UserControl</SubType>
     </Compile>
