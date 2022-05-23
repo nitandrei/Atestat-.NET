@@ -15,11 +15,15 @@ namespace Atestat.NET
     {
         private int question = 0, answer, puncte = 0;
         private string[,] randomizedQuestions;
+        private int timp;
         public Teste()
         {
             InitializeComponent();
             Components.randomizeQuestions();
             Components.splitArrayQuestions(ref randomizedQuestions);
+            timp = Components.numberOfQuestions * 90;
+            labelPunctaj.Text = "Punctaj: " + puncte.ToString("D2") + "\\" + Components.numberOfQuestions;
+            labelTimp.Text = "Timp: " + (timp / 60).ToString("D2") + ":" + (timp % 60).ToString("D2");
         }
         private void resetLayout()
         {
@@ -52,7 +56,7 @@ namespace Atestat.NET
             buttonC.Visible = show;
             buttonD.Visible = show;
             labelPunctaj.Visible = show;
-            label2.Visible = show;
+            labelTimp.Visible = show;
         }
         private void enableAllButtons(bool enable)
         {
@@ -67,18 +71,31 @@ namespace Atestat.NET
             if(tabIndex == answer)
             {
                 puncte++;
-                labelPunctaj.Text = "Punctaj: " + puncte.ToString() + "\\" + Components.numberOfQuestions;
+                labelPunctaj.Text = "Punctaj: " + puncte.ToString("D2") + "\\" + Components.numberOfQuestions;
             }
             colorButton(buttonA);
             colorButton(buttonB);
             colorButton(buttonC);
             colorButton(buttonD);
         }
+        private void timerTimp_Tick(object sender, EventArgs e)
+        {
+            if(timp <= 0)
+            {
+                timerTimp.Stop();
+            }
+            else
+            {
+                timp--;
+                labelTimp.Text = "Timp: " + (timp/60).ToString("D2") + ":" + (timp%60).ToString("D2");
+            }
+        }
         private void buttonNext_Click(object sender, EventArgs e)
         {
             question++;
             if (question == 1)
             {
+                timerTimp.Start();
                 Image old = Components.teste.BackgroundImage;
                 Components.panelRight.SuspendLayout();
                 ShowAllControls(true);
@@ -89,6 +106,16 @@ namespace Atestat.NET
             }
             if(question > Components.numberOfQuestions)
             {
+                Components.panelRight.SuspendLayout();
+                timerTimp.Stop();
+                ShowAllControls(false);
+                buttonNext.Visible = false;
+                Components.teste.BackgroundImage = global::Atestat.NET.Properties.Resources.Teste_Background2;
+                labelPunctajFinal.Text = puncte.ToString("D2") + "\\" + Components.numberOfQuestions;
+                labelTimpFinal.Text = ( (Components.numberOfQuestions * 90 - timp) / 60).ToString("D2") + ":" + ( (Components.numberOfQuestions * 90 - timp) % 60).ToString("D2");
+                labelPunctajFinal.Visible = true;
+                labelTimpFinal.Visible = true;
+                Components.panelRight.ResumeLayout(true);
                 return;
             }
             resetLayout();

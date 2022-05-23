@@ -29,14 +29,18 @@ namespace Atestat.NET
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.buttonA = new System.Windows.Forms.Button();
             this.labelPunctaj = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelTimp = new System.Windows.Forms.Label();
             this.buttonB = new System.Windows.Forms.Button();
             this.buttonC = new System.Windows.Forms.Button();
             this.buttonD = new System.Windows.Forms.Button();
             this.buttonNext = new System.Windows.Forms.Button();
+            this.timerTimp = new System.Windows.Forms.Timer(this.components);
+            this.labelPunctajFinal = new System.Windows.Forms.Label();
+            this.labelTimpFinal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,25 +72,26 @@ namespace Atestat.NET
             // labelPunctaj
             // 
             this.labelPunctaj.AutoSize = true;
-            this.labelPunctaj.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPunctaj.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F);
             this.labelPunctaj.ForeColor = System.Drawing.Color.White;
-            this.labelPunctaj.Location = new System.Drawing.Point(1009, 21);
+            this.labelPunctaj.Location = new System.Drawing.Point(996, 9);
             this.labelPunctaj.Name = "labelPunctaj";
-            this.labelPunctaj.Size = new System.Drawing.Size(71, 24);
+            this.labelPunctaj.Size = new System.Drawing.Size(132, 41);
             this.labelPunctaj.TabIndex = 5;
             this.labelPunctaj.Text = "Punctaj";
             this.labelPunctaj.Visible = false;
             // 
-            // label2
+            // labelTimp
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(848, 672);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Timp";
-            this.label2.Visible = false;
+            this.labelTimp.AutoSize = true;
+            this.labelTimp.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F);
+            this.labelTimp.ForeColor = System.Drawing.Color.White;
+            this.labelTimp.Location = new System.Drawing.Point(846, 658);
+            this.labelTimp.Name = "labelTimp";
+            this.labelTimp.Size = new System.Drawing.Size(93, 41);
+            this.labelTimp.TabIndex = 6;
+            this.labelTimp.Text = "Timp";
+            this.labelTimp.Visible = false;
             // 
             // buttonB
             // 
@@ -148,17 +153,46 @@ namespace Atestat.NET
             this.buttonNext.UseVisualStyleBackColor = true;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
+            // timerTimp
+            // 
+            this.timerTimp.Interval = 1000;
+            this.timerTimp.Tick += new System.EventHandler(this.timerTimp_Tick);
+            // 
+            // labelPunctajFinal
+            // 
+            this.labelPunctajFinal.AutoSize = true;
+            this.labelPunctajFinal.Font = new System.Drawing.Font("Franklin Gothic Medium", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPunctajFinal.ForeColor = System.Drawing.Color.White;
+            this.labelPunctajFinal.Location = new System.Drawing.Point(676, 344);
+            this.labelPunctajFinal.Name = "labelPunctajFinal";
+            this.labelPunctajFinal.Size = new System.Drawing.Size(0, 81);
+            this.labelPunctajFinal.TabIndex = 11;
+            this.labelPunctajFinal.Visible = false;
+            // 
+            // labelTimpFinal
+            // 
+            this.labelTimpFinal.AutoSize = true;
+            this.labelTimpFinal.Font = new System.Drawing.Font("Franklin Gothic Medium", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimpFinal.ForeColor = System.Drawing.Color.White;
+            this.labelTimpFinal.Location = new System.Drawing.Point(746, 530);
+            this.labelTimpFinal.Name = "labelTimpFinal";
+            this.labelTimpFinal.Size = new System.Drawing.Size(0, 81);
+            this.labelTimpFinal.TabIndex = 12;
+            this.labelTimpFinal.Visible = false;
+            // 
             // Teste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(155)))));
             this.BackgroundImage = global::Atestat.NET.Properties.Resources.Teste_Background1;
+            this.Controls.Add(this.labelTimpFinal);
+            this.Controls.Add(this.labelPunctajFinal);
             this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.buttonD);
             this.Controls.Add(this.buttonC);
             this.Controls.Add(this.buttonB);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelTimp);
             this.Controls.Add(this.labelPunctaj);
             this.Controls.Add(this.buttonA);
             this.Controls.Add(this.pictureBox);
@@ -177,10 +211,13 @@ namespace Atestat.NET
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button buttonA;
         private System.Windows.Forms.Label labelPunctaj;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTimp;
         private System.Windows.Forms.Button buttonB;
         private System.Windows.Forms.Button buttonC;
         private System.Windows.Forms.Button buttonD;
         private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.Timer timerTimp;
+        private System.Windows.Forms.Label labelPunctajFinal;
+        private System.Windows.Forms.Label labelTimpFinal;
     }
 }
