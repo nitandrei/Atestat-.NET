@@ -45,6 +45,7 @@
             this.buttonBack.Size = new System.Drawing.Size(62, 100);
             this.buttonBack.TabIndex = 2;
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // Backtracking
             // 

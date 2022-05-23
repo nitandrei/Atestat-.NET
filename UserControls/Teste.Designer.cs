@@ -41,6 +41,7 @@ namespace Atestat.NET
             this.timerTimp = new System.Windows.Forms.Timer(this.components);
             this.labelPunctajFinal = new System.Windows.Forms.Label();
             this.labelTimpFinal = new System.Windows.Forms.Label();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -180,12 +181,28 @@ namespace Atestat.NET
             this.labelTimpFinal.TabIndex = 12;
             this.labelTimpFinal.Visible = false;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBack.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_Back;
+            this.buttonBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBack.FlatAppearance.BorderSize = 0;
+            this.buttonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBack.Location = new System.Drawing.Point(59, 474);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(62, 100);
+            this.buttonBack.TabIndex = 13;
+            this.buttonBack.UseVisualStyleBackColor = false;
+            // 
             // Teste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(155)))));
             this.BackgroundImage = global::Atestat.NET.Properties.Resources.Teste_Background1;
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTimpFinal);
             this.Controls.Add(this.labelPunctajFinal);
             this.Controls.Add(this.buttonNext);
@@ -219,5 +236,6 @@ namespace Atestat.NET
         private System.Windows.Forms.Timer timerTimp;
         private System.Windows.Forms.Label labelPunctajFinal;
         private System.Windows.Forms.Label labelTimpFinal;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
