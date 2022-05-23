@@ -71,8 +71,6 @@ namespace Atestat.NET
         {
             Components.Show(ref Components.algoritmiDeBaza, true);
             updatePanelMini(sender as Button);
-            WelcomeForm welcome = new WelcomeForm();
-            welcome.ShowDialog();
         }
 
         private void buttonTDA_Click(object sender, EventArgs e)
