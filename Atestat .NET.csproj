@@ -511,5 +511,8 @@
   <ItemGroup>
     <None Include="Images\Buton SumaSiDiferenta Hover.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Teste Background1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

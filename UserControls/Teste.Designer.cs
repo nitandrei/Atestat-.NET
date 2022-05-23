@@ -29,36 +29,39 @@ namespace Atestat.NET
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.buttonA = new System.Windows.Forms.Button();
             this.labelPunctaj = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonB = new System.Windows.Forms.Button();
             this.buttonC = new System.Windows.Forms.Button();
             this.buttonD = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.buttonNext = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(198, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1056, 142);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox.Location = new System.Drawing.Point(252, 63);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(969, 142);
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
+            this.pictureBox.Visible = false;
             // 
             // buttonA
             // 
             this.buttonA.BackColor = System.Drawing.Color.White;
+            this.buttonA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonA.Location = new System.Drawing.Point(198, 415);
+            this.buttonA.Location = new System.Drawing.Point(265, 415);
             this.buttonA.Name = "buttonA";
             this.buttonA.Size = new System.Drawing.Size(75, 23);
             this.buttonA.TabIndex = 1;
             this.buttonA.Text = "A";
             this.buttonA.UseVisualStyleBackColor = false;
+            this.buttonA.Visible = false;
             this.buttonA.Click += new System.EventHandler(this.button_Click);
             // 
             // labelPunctaj
@@ -70,6 +73,7 @@ namespace Atestat.NET
             this.labelPunctaj.Size = new System.Drawing.Size(43, 13);
             this.labelPunctaj.TabIndex = 5;
             this.labelPunctaj.Text = "Punctaj";
+            this.labelPunctaj.Visible = false;
             // 
             // label2
             // 
@@ -80,10 +84,12 @@ namespace Atestat.NET
             this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Timp";
+            this.label2.Visible = false;
             // 
             // buttonB
             // 
             this.buttonB.BackColor = System.Drawing.Color.White;
+            this.buttonB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonB.Location = new System.Drawing.Point(497, 415);
             this.buttonB.Name = "buttonB";
@@ -91,11 +97,13 @@ namespace Atestat.NET
             this.buttonB.TabIndex = 2;
             this.buttonB.Text = "B";
             this.buttonB.UseVisualStyleBackColor = false;
+            this.buttonB.Visible = false;
             this.buttonB.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonC
             // 
             this.buttonC.BackColor = System.Drawing.Color.White;
+            this.buttonC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonC.Location = new System.Drawing.Point(877, 415);
             this.buttonC.Name = "buttonC";
@@ -103,11 +111,13 @@ namespace Atestat.NET
             this.buttonC.TabIndex = 3;
             this.buttonC.Text = "C";
             this.buttonC.UseVisualStyleBackColor = false;
+            this.buttonC.Visible = false;
             this.buttonC.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonD
             // 
             this.buttonD.BackColor = System.Drawing.Color.White;
+            this.buttonD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonD.Location = new System.Drawing.Point(1146, 415);
             this.buttonD.Name = "buttonD";
@@ -115,36 +125,38 @@ namespace Atestat.NET
             this.buttonD.TabIndex = 4;
             this.buttonD.Text = "D";
             this.buttonD.UseVisualStyleBackColor = false;
+            this.buttonD.Visible = false;
             this.buttonD.Click += new System.EventHandler(this.button_Click);
             // 
-            // button5
+            // buttonNext
             // 
-            this.button5.Location = new System.Drawing.Point(1105, 634);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonNext.Location = new System.Drawing.Point(1105, 634);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(75, 23);
+            this.buttonNext.TabIndex = 10;
+            this.buttonNext.Text = "button5";
+            this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // Teste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(75)))), ((int)(((byte)(36)))));
-            this.Controls.Add(this.button5);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(155)))));
+            this.BackgroundImage = global::Atestat.NET.Properties.Resources.Teste_Background1;
+            this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.buttonD);
             this.Controls.Add(this.buttonC);
             this.Controls.Add(this.buttonB);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelPunctaj);
             this.Controls.Add(this.buttonA);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Teste";
             this.Size = new System.Drawing.Size(1280, 720);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,13 +164,13 @@ namespace Atestat.NET
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button buttonA;
         private System.Windows.Forms.Label labelPunctaj;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonB;
         private System.Windows.Forms.Button buttonC;
         private System.Windows.Forms.Button buttonD;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonNext;
     }
 }

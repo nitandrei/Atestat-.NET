@@ -31,14 +31,28 @@ namespace Atestat.NET
         }
         private void showQuestion()
         {
-            pictureBox1.Image = Image.FromFile(Path.Combine(Components.pathToTestsFolder,randomizedQuestions[question, 0]));
-            answer = int.Parse(randomizedQuestions[question, 1]);
+            Image old = pictureBox.Image;
+            pictureBox.Image = Image.FromFile(Path.Combine(Components.pathToTestsFolder,randomizedQuestions[question - 1, 0]));
+            //pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            answer = int.Parse(randomizedQuestions[question - 1, 1]);
+            if( old != null )
+                old.Dispose();
         }
         private void colorButton(Button button)
         {
             if (button.TabIndex == answer)
                 button.BackColor = Color.Green;
             else button.BackColor = Color.Red;
+        }
+        private void ShowAllControls(bool show)
+        {
+            pictureBox.Visible = show;
+            buttonA.Visible = show;
+            buttonB.Visible = show;
+            buttonC.Visible = show;
+            buttonD.Visible = show;
+            labelPunctaj.Visible = show;
+            label2.Visible = show;
         }
         private void enableAllButtons(bool enable)
         {
@@ -60,15 +74,29 @@ namespace Atestat.NET
             colorButton(buttonC);
             colorButton(buttonD);
         }
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
+            question++;
+            if (question == 1)
+            {
+                Image old = Components.teste.BackgroundImage;
+                Components.panelRight.SuspendLayout();
+                ShowAllControls(true);
+                Components.teste.BackgroundImage = null;
+                if (old != null)
+                    old.Dispose();
+                Components.panelRight.ResumeLayout(true);
+            }
+            if(question > Components.numberOfQuestions)
+            {
+                return;
+            }
+            resetLayout();
+            showQuestion();
+        }
         private void button_Click(object sender, EventArgs e)
         {
             checkAnswer((sender as Control).TabIndex);
-        }
-        private void button5_Click(object sender, EventArgs e)
-        {
-            resetLayout();
-            showQuestion();
-            question++;
         }
     }
 }
