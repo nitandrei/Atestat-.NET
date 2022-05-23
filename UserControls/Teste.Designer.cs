@@ -48,10 +48,10 @@ namespace Atestat.NET
             // 
             // pictureBox
             // 
-            this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox.Location = new System.Drawing.Point(252, 63);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(969, 142);
+            this.pictureBox.Size = new System.Drawing.Size(969, 248);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             this.pictureBox.Visible = false;
@@ -62,7 +62,7 @@ namespace Atestat.NET
             this.buttonA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonA.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonA.Location = new System.Drawing.Point(265, 415);
+            this.buttonA.Location = new System.Drawing.Point(334, 415);
             this.buttonA.Name = "buttonA";
             this.buttonA.Size = new System.Drawing.Size(75, 55);
             this.buttonA.TabIndex = 1;
@@ -88,7 +88,7 @@ namespace Atestat.NET
             this.labelTimp.AutoSize = true;
             this.labelTimp.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F);
             this.labelTimp.ForeColor = System.Drawing.Color.White;
-            this.labelTimp.Location = new System.Drawing.Point(846, 658);
+            this.labelTimp.Location = new System.Drawing.Point(631, 672);
             this.labelTimp.Name = "labelTimp";
             this.labelTimp.Size = new System.Drawing.Size(93, 41);
             this.labelTimp.TabIndex = 6;
@@ -101,7 +101,7 @@ namespace Atestat.NET
             this.buttonB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonB.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F);
-            this.buttonB.Location = new System.Drawing.Point(497, 415);
+            this.buttonB.Location = new System.Drawing.Point(578, 415);
             this.buttonB.Name = "buttonB";
             this.buttonB.Size = new System.Drawing.Size(75, 55);
             this.buttonB.TabIndex = 2;
@@ -116,7 +116,7 @@ namespace Atestat.NET
             this.buttonC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonC.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F);
-            this.buttonC.Location = new System.Drawing.Point(877, 415);
+            this.buttonC.Location = new System.Drawing.Point(807, 415);
             this.buttonC.Name = "buttonC";
             this.buttonC.Size = new System.Drawing.Size(75, 55);
             this.buttonC.TabIndex = 3;
@@ -131,7 +131,7 @@ namespace Atestat.NET
             this.buttonD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonD.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F);
-            this.buttonD.Location = new System.Drawing.Point(1146, 415);
+            this.buttonD.Location = new System.Drawing.Point(1076, 415);
             this.buttonD.Name = "buttonD";
             this.buttonD.Size = new System.Drawing.Size(75, 55);
             this.buttonD.TabIndex = 4;
@@ -191,7 +191,7 @@ namespace Atestat.NET
             this.buttonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Location = new System.Drawing.Point(88, 585);
+            this.buttonBack.Location = new System.Drawing.Point(252, 585);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(62, 100);
             this.buttonBack.TabIndex = 13;
@@ -205,7 +205,7 @@ namespace Atestat.NET
             this.buttonSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSubmit.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.Location = new System.Drawing.Point(583, 630);
+            this.buttonSubmit.Location = new System.Drawing.Point(638, 614);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(188, 55);
             this.buttonSubmit.TabIndex = 14;

@@ -188,9 +188,12 @@ namespace Atestat.NET
                 labelTimpFinal.Visible = false;
                 buttonSubmit.Visible = false;
                 Components.teste.BackgroundImage = null;
+                loadLayout();
+                showQuestion();
                 if (old != null)
                     old.Dispose();
                 Components.panelRight.ResumeLayout(true);
+                return;
             }
             loadLayout();
             showQuestion();
