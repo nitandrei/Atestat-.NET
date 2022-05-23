@@ -41,11 +41,12 @@ namespace Atestat.NET.UserControls
             this.buttonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Location = new System.Drawing.Point(102, 606);
+            this.buttonBack.Location = new System.Drawing.Point(98, 612);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(62, 100);
             this.buttonBack.TabIndex = 3;
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // SirDeCaractere3
             // 

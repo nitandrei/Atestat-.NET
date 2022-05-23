@@ -33,7 +33,6 @@ namespace Atestat.NET.UserControls
             this.buttonCUN = new System.Windows.Forms.Button();
             this.buttonDiviz = new System.Windows.Forms.Button();
             this.buttonSLF = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonSSD
@@ -104,28 +103,12 @@ namespace Atestat.NET.UserControls
             this.buttonSLF.MouseEnter += new System.EventHandler(this.buttonSLF_MouseEnter);
             this.buttonSLF.MouseLeave += new System.EventHandler(this.buttonSLF_MouseLeave);
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.Color.Transparent;
-            this.buttonBack.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_Back;
-            this.buttonBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBack.FlatAppearance.BorderSize = 0;
-            this.buttonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Location = new System.Drawing.Point(106, 590);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(62, 100);
-            this.buttonBack.TabIndex = 4;
-            this.buttonBack.UseVisualStyleBackColor = false;
-            // 
             // AlgoritmiDeBaza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::Atestat.NET.Properties.Resources.AlgoritmiDeBaza;
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonSLF);
             this.Controls.Add(this.buttonDiviz);
             this.Controls.Add(this.buttonCUN);
@@ -144,6 +127,5 @@ namespace Atestat.NET.UserControls
         private System.Windows.Forms.Button buttonCUN;
         private System.Windows.Forms.Button buttonDiviz;
         private System.Windows.Forms.Button buttonSLF;
-        private System.Windows.Forms.Button buttonBack;
     }
 }

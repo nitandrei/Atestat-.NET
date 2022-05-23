@@ -16,5 +16,11 @@ namespace Atestat.NET.UserControls
         {
             InitializeComponent();
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.algoritmiDeBaza, false);
+            Components.Hide(ref Components.fibonacci);
+        }
     }
 }

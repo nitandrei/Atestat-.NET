@@ -22,5 +22,11 @@ namespace Atestat.NET.UserControls
             Components.Show(ref Components.grafuri2, false);
             Components.Hide(ref Components.grafuri1);
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.teorie, false);
+            Components.Hide(ref Components.grafuri1);
+        }
     }
 }
