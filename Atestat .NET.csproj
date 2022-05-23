@@ -499,5 +499,17 @@
   <ItemGroup>
     <None Include="Images\Buton SirulLuiFibonacci.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton CifreleUnuiNumar Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton Divizibilitate Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton SirulLuiFibonacci Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton SumaSiDiferenta Hover.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -49,8 +49,8 @@ namespace Atestat.NET.UserControls
             this.buttonSSD.TabIndex = 0;
             this.buttonSSD.UseVisualStyleBackColor = true;
             this.buttonSSD.Click += new System.EventHandler(this.buttonSSD_Click);
-            this.buttonSSD.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.buttonSSD.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
+            this.buttonSSD.MouseEnter += new System.EventHandler(this.buttonSSD_MouseEnter);
+            this.buttonSSD.MouseLeave += new System.EventHandler(this.buttonSSD_MouseLeave);
             // 
             // buttonCUN
             // 
@@ -66,8 +66,8 @@ namespace Atestat.NET.UserControls
             this.buttonCUN.TabIndex = 1;
             this.buttonCUN.UseVisualStyleBackColor = true;
             this.buttonCUN.Click += new System.EventHandler(this.buttonCUN_Click);
-            this.buttonCUN.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.buttonCUN.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
+            this.buttonCUN.MouseEnter += new System.EventHandler(this.buttonCUN_MouseEnter);
+            this.buttonCUN.MouseLeave += new System.EventHandler(this.buttonCUN_MouseLeave);
             // 
             // buttonDiviz
             // 
@@ -83,8 +83,8 @@ namespace Atestat.NET.UserControls
             this.buttonDiviz.TabIndex = 2;
             this.buttonDiviz.UseVisualStyleBackColor = true;
             this.buttonDiviz.Click += new System.EventHandler(this.buttonDiviz_Click);
-            this.buttonDiviz.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.buttonDiviz.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
+            this.buttonDiviz.MouseEnter += new System.EventHandler(this.buttonDiviz_MouseEnter);
+            this.buttonDiviz.MouseLeave += new System.EventHandler(this.buttonDiviz_MouseLeave);
             // 
             // buttonSLF
             // 
@@ -100,8 +100,8 @@ namespace Atestat.NET.UserControls
             this.buttonSLF.TabIndex = 3;
             this.buttonSLF.UseVisualStyleBackColor = true;
             this.buttonSLF.Click += new System.EventHandler(this.buttonSLF_Click);
-            this.buttonSLF.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.buttonSLF.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
+            this.buttonSLF.MouseEnter += new System.EventHandler(this.buttonSLF_MouseEnter);
+            this.buttonSLF.MouseLeave += new System.EventHandler(this.buttonSLF_MouseLeave);
             // 
             // AlgoritmiDeBaza
             // 

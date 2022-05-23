@@ -133,9 +133,29 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Buton_CifreleUnuiNumar_Hover {
+            get {
+                object obj = ResourceManager.GetObject("Buton_CifreleUnuiNumar_Hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Buton_Divizibilitate {
             get {
                 object obj = ResourceManager.GetObject("Buton_Divizibilitate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Buton_Divizibilitate_Hover {
+            get {
+                object obj = ResourceManager.GetObject("Buton_Divizibilitate_Hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +233,29 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Buton_SirulLuiFibonacci_Hover {
+            get {
+                object obj = ResourceManager.GetObject("Buton_SirulLuiFibonacci_Hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Buton_SumaSiDiferenta {
             get {
                 object obj = ResourceManager.GetObject("Buton_SumaSiDiferenta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Buton_SumaSiDiferenta_Hover {
+            get {
+                object obj = ResourceManager.GetObject("Buton_SumaSiDiferenta_Hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
