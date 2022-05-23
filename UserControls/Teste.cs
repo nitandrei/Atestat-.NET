@@ -53,7 +53,7 @@ namespace Atestat.NET
             if(tabIndex == answer)
             {
                 puncte++;
-                label1.Text = puncte.ToString();
+                labelPunctaj.Text = "Punctaj: " + puncte.ToString() + "\\" + Components.numberOfQuestions;
             }
             colorButton(buttonA);
             colorButton(buttonB);

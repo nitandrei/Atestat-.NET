@@ -31,7 +31,7 @@ namespace Atestat.NET
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonA = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelPunctaj = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonB = new System.Windows.Forms.Button();
             this.buttonC = new System.Windows.Forms.Button();
@@ -61,15 +61,15 @@ namespace Atestat.NET
             this.buttonA.UseVisualStyleBackColor = false;
             this.buttonA.Click += new System.EventHandler(this.button_Click);
             // 
-            // label1
+            // labelPunctaj
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1009, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Punctaj";
+            this.labelPunctaj.AutoSize = true;
+            this.labelPunctaj.ForeColor = System.Drawing.Color.White;
+            this.labelPunctaj.Location = new System.Drawing.Point(1009, 21);
+            this.labelPunctaj.Name = "labelPunctaj";
+            this.labelPunctaj.Size = new System.Drawing.Size(43, 13);
+            this.labelPunctaj.TabIndex = 5;
+            this.labelPunctaj.Text = "Punctaj";
             // 
             // label2
             // 
@@ -119,7 +119,7 @@ namespace Atestat.NET
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(571, 553);
+            this.button5.Location = new System.Drawing.Point(1105, 634);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 10;
@@ -137,7 +137,7 @@ namespace Atestat.NET
             this.Controls.Add(this.buttonC);
             this.Controls.Add(this.buttonB);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelPunctaj);
             this.Controls.Add(this.buttonA);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
@@ -154,7 +154,7 @@ namespace Atestat.NET
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonA;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelPunctaj;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonB;
         private System.Windows.Forms.Button buttonC;
