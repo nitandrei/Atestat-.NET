@@ -54,10 +54,10 @@ namespace Atestat.NET
         /// Teste, formatul este "Nume_poze.extensie,numarul_variantei_corecte" EX: Poza.png,1
         /// </summary>
         public const int numberOfQuestions = 10;
-        private const string localFolder = "Teste";
+        private const string localTestsFolder = "Teste";
         private const string txtFile = "Intrebari.txt";
         public static string[] questions;
-        private static string pathToFolder;
+        public static string pathToTestsFolder;
         /// <summary>
         /// Controls constants
         /// </summary>
@@ -114,14 +114,14 @@ namespace Atestat.NET
         public static void initQuestions()
         {
             int line = 0;
-            pathToFolder = Path.Combine(AppContext.BaseDirectory, localFolder);
-            if(!Directory.Exists(pathToFolder))
+            pathToTestsFolder = Path.Combine(AppContext.BaseDirectory, localTestsFolder);
+            if(!Directory.Exists(pathToTestsFolder))
             {
-                MessageBox.Show("Fisierul " + Components.pathToFolder + " nu exista\n" +
+                MessageBox.Show("Fisierul " + Components.pathToTestsFolder + " nu exista\n" +
                                 "Aplicatia se va inchide!");
                 Environment.Exit(0);
             }
-            string pathToTxt = Path.Combine(pathToFolder, txtFile);
+            string pathToTxt = Path.Combine(pathToTestsFolder, txtFile);
             if (!File.Exists(pathToTxt))
             {
                 MessageBox.Show("Fisierul "+ Components.txtFile + " nu exista\n"+
@@ -147,7 +147,7 @@ namespace Atestat.NET
                                     "Aplicatia se va inchide!");
                     Environment.Exit(0);
                 }
-                if ( !File.Exists(Path.Combine(pathToFolder, temp[0])) )
+                if ( !File.Exists(Path.Combine(pathToTestsFolder, temp[0])) )
                 {
                     MessageBox.Show("A aparut o problema la linia " + line + '\n' +
                                     "Fisierul " + temp[0] + " nu exista\n" +
@@ -169,6 +169,18 @@ namespace Atestat.NET
         {
             var rnd = new Random();
             questions = questions.OrderBy(question => rnd.Next()).ToArray();
+        }
+
+        public static void splitArrayQuestions(ref string[,] array)
+        {
+            string[] temp;
+            array = new string[Components.numberOfQuestions, 2];
+            for(int i = 0; i < Components.numberOfQuestions; i++)
+            {
+                temp = Components.questions[i].Split(',');
+                array[i, 0] = temp[0];
+                array[i, 1] = temp[1];
+            }
         }
 
         //Add font to resources, then reference it here
