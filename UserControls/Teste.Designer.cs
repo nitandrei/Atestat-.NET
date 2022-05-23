@@ -55,9 +55,10 @@ namespace Atestat.NET
             this.buttonA.BackColor = System.Drawing.Color.White;
             this.buttonA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonA.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonA.Location = new System.Drawing.Point(265, 415);
             this.buttonA.Name = "buttonA";
-            this.buttonA.Size = new System.Drawing.Size(75, 23);
+            this.buttonA.Size = new System.Drawing.Size(75, 55);
             this.buttonA.TabIndex = 1;
             this.buttonA.Text = "A";
             this.buttonA.UseVisualStyleBackColor = false;
@@ -67,10 +68,11 @@ namespace Atestat.NET
             // labelPunctaj
             // 
             this.labelPunctaj.AutoSize = true;
+            this.labelPunctaj.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPunctaj.ForeColor = System.Drawing.Color.White;
             this.labelPunctaj.Location = new System.Drawing.Point(1009, 21);
             this.labelPunctaj.Name = "labelPunctaj";
-            this.labelPunctaj.Size = new System.Drawing.Size(43, 13);
+            this.labelPunctaj.Size = new System.Drawing.Size(71, 24);
             this.labelPunctaj.TabIndex = 5;
             this.labelPunctaj.Text = "Punctaj";
             this.labelPunctaj.Visible = false;
@@ -91,9 +93,10 @@ namespace Atestat.NET
             this.buttonB.BackColor = System.Drawing.Color.White;
             this.buttonB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonB.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F);
             this.buttonB.Location = new System.Drawing.Point(497, 415);
             this.buttonB.Name = "buttonB";
-            this.buttonB.Size = new System.Drawing.Size(75, 23);
+            this.buttonB.Size = new System.Drawing.Size(75, 55);
             this.buttonB.TabIndex = 2;
             this.buttonB.Text = "B";
             this.buttonB.UseVisualStyleBackColor = false;
@@ -105,9 +108,10 @@ namespace Atestat.NET
             this.buttonC.BackColor = System.Drawing.Color.White;
             this.buttonC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonC.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F);
             this.buttonC.Location = new System.Drawing.Point(877, 415);
             this.buttonC.Name = "buttonC";
-            this.buttonC.Size = new System.Drawing.Size(75, 23);
+            this.buttonC.Size = new System.Drawing.Size(75, 55);
             this.buttonC.TabIndex = 3;
             this.buttonC.Text = "C";
             this.buttonC.UseVisualStyleBackColor = false;
@@ -119,9 +123,10 @@ namespace Atestat.NET
             this.buttonD.BackColor = System.Drawing.Color.White;
             this.buttonD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonD.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F);
             this.buttonD.Location = new System.Drawing.Point(1146, 415);
             this.buttonD.Name = "buttonD";
-            this.buttonD.Size = new System.Drawing.Size(75, 23);
+            this.buttonD.Size = new System.Drawing.Size(75, 55);
             this.buttonD.TabIndex = 4;
             this.buttonD.Text = "D";
             this.buttonD.UseVisualStyleBackColor = false;
@@ -130,11 +135,16 @@ namespace Atestat.NET
             // 
             // buttonNext
             // 
-            this.buttonNext.Location = new System.Drawing.Point(1105, 634);
+            this.buttonNext.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_Next;
+            this.buttonNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonNext.FlatAppearance.BorderSize = 0;
+            this.buttonNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNext.Location = new System.Drawing.Point(1159, 585);
             this.buttonNext.Name = "buttonNext";
-            this.buttonNext.Size = new System.Drawing.Size(75, 23);
+            this.buttonNext.Size = new System.Drawing.Size(62, 100);
             this.buttonNext.TabIndex = 10;
-            this.buttonNext.Text = "button5";
             this.buttonNext.UseVisualStyleBackColor = true;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
