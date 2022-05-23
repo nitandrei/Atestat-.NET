@@ -22,5 +22,11 @@ namespace Atestat.NET.UserControls
             Components.Show(ref Components.sirDeCaractere3, false);
             Components.Hide(ref Components.sirDeCaractere2);
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.sirDeCaractere1, false);
+            Components.Hide(ref Components.sirDeCaractere2);
+        }
     }
 }
