@@ -22,5 +22,11 @@ namespace Atestat.NET.UserControls
             Components.Show(ref Components.metodeDeProgramare, false);
             Components.Hide(ref Components.backtracking);
         }
+
+        private void buttonSudoku_Click(object sender, EventArgs e)
+        {
+            SudokuForm sudokuForm = new SudokuForm();
+            sudokuForm.ShowDialog();
+        }
     }
 }
