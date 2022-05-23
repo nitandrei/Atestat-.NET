@@ -42,6 +42,7 @@ namespace Atestat.NET
             this.labelPunctajFinal = new System.Windows.Forms.Label();
             this.labelTimpFinal = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonSubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,11 +191,28 @@ namespace Atestat.NET
             this.buttonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Location = new System.Drawing.Point(59, 474);
+            this.buttonBack.Location = new System.Drawing.Point(88, 585);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(62, 100);
             this.buttonBack.TabIndex = 13;
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Visible = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // buttonSubmit
+            // 
+            this.buttonSubmit.BackColor = System.Drawing.Color.White;
+            this.buttonSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSubmit.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSubmit.Location = new System.Drawing.Point(583, 630);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(188, 55);
+            this.buttonSubmit.TabIndex = 14;
+            this.buttonSubmit.Text = "Submit";
+            this.buttonSubmit.UseVisualStyleBackColor = false;
+            this.buttonSubmit.Visible = false;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // Teste
             // 
@@ -202,6 +220,7 @@ namespace Atestat.NET
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(155)))));
             this.BackgroundImage = global::Atestat.NET.Properties.Resources.Teste_Background1;
+            this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTimpFinal);
             this.Controls.Add(this.labelPunctajFinal);
@@ -237,5 +256,6 @@ namespace Atestat.NET
         private System.Windows.Forms.Label labelPunctajFinal;
         private System.Windows.Forms.Label labelTimpFinal;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Button buttonSubmit;
     }
 }
