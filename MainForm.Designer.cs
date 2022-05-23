@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.timer_Meniu = new System.Windows.Forms.Timer(this.components);
             this.buttonTDA = new System.Windows.Forms.Button();
             this.buttonADB = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.codeEducationLogo = new System.Windows.Forms.PictureBox();
             this.button_Meniu = new System.Windows.Forms.Button();
             this.buttonTeorie = new System.Windows.Forms.Button();
             this.buttonMDP = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.timer_Meniu = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.codeEducationLogo)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 720);
             this.panel1.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(228)))), ((int)(((byte)(37)))));
+            this.panel3.Location = new System.Drawing.Point(1, 721);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(7, 73);
+            this.panel3.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1280, 720);
+            this.panel2.TabIndex = 2;
+            // 
+            // timer_Meniu
+            // 
+            this.timer_Meniu.Interval = 15;
+            this.timer_Meniu.Tick += new System.EventHandler(this.timer_Meniu_Tick);
             // 
             // buttonTDA
             // 
@@ -100,15 +124,6 @@
             this.buttonADB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonADB.UseVisualStyleBackColor = true;
             this.buttonADB.Click += new System.EventHandler(this.buttonADB_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(228)))), ((int)(((byte)(37)))));
-            this.panel3.Location = new System.Drawing.Point(1, 721);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(7, 73);
-            this.panel3.TabIndex = 8;
             // 
             // codeEducationLogo
             // 
@@ -205,21 +220,6 @@
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1280, 720);
-            this.panel2.TabIndex = 2;
-            // 
-            // timer_Meniu
-            // 
-            this.timer_Meniu.Interval = 15;
-            this.timer_Meniu.Tick += new System.EventHandler(this.timer_Meniu_Tick);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,7 +232,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Code.Education";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.codeEducationLogo)).EndInit();
             this.ResumeLayout(false);

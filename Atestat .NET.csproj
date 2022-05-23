@@ -66,6 +66,9 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Iconita.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -534,6 +537,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Buton Sudoku.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Iconita.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

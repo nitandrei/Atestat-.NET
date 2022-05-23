@@ -72,7 +72,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoadingScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoadingScreen";
+            this.Text = "Code.Education";
             this.Activated += new System.EventHandler(this.LoadingScreen_Activated);
             this.Validated += new System.EventHandler(this.LoadingScreen_Validated);
             ((System.ComponentModel.ISupportInitialize)(this.GIFcontainer)).EndInit();

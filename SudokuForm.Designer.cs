@@ -112,7 +112,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SudokuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SudokuForm";
+            this.Text = "Sudoku";
             this.ResumeLayout(false);
 
         }
