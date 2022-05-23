@@ -481,5 +481,23 @@
   <ItemGroup>
     <None Include="Images\Buton Next.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AlgoritmiDeBaza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AlgoritmiDeBazaOriginal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton SumaSiDiferenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton CifreleUnuiNumar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton Divizibilitate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Buton SirulLuiFibonacci.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

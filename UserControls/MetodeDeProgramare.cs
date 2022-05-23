@@ -25,15 +25,27 @@ namespace Atestat.NET.UserControls
         {
             (sender as Button).BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonDEI_Click(object sender, EventArgs e)
         {
             Components.Show(ref Components.divideEtImpera, false);
             Components.Hide(ref Components.metodeDeProgramare);
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonGreedy_Click(object sender, EventArgs e)
         {
-
+            Components.Show(ref Components.greedy, false);
+            Components.Hide(ref Components.metodeDeProgramare);
         }
 
+        private void buttonBacktracking_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.backtracking, false);
+            Components.Hide(ref Components.metodeDeProgramare);
+        }
+
+        private void buttonPD_Click(object sender, EventArgs e)
+        {
+            Components.Show(ref Components.programareDinamica, false);
+            Components.Hide(ref Components.metodeDeProgramare);
+        }
     }
 }

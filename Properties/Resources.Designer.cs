@@ -63,6 +63,26 @@ namespace Atestat.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AlgoritmiDeBaza {
+            get {
+                object obj = ResourceManager.GetObject("AlgoritmiDeBaza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AlgoritmiDeBazaOriginal {
+            get {
+                object obj = ResourceManager.GetObject("AlgoritmiDeBazaOriginal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Backtracking {
             get {
                 object obj = ResourceManager.GetObject("Backtracking", resourceCulture);
@@ -96,6 +116,26 @@ namespace Atestat.NET.Properties {
         internal static System.Drawing.Bitmap Buton_Carte_Negru {
             get {
                 object obj = ResourceManager.GetObject("Buton_Carte_Negru", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Buton_CifreleUnuiNumar {
+            get {
+                object obj = ResourceManager.GetObject("Buton_CifreleUnuiNumar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Buton_Divizibilitate {
+            get {
+                object obj = ResourceManager.GetObject("Buton_Divizibilitate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +196,26 @@ namespace Atestat.NET.Properties {
         internal static System.Drawing.Bitmap Buton_Next {
             get {
                 object obj = ResourceManager.GetObject("Buton_Next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Buton_SirulLuiFibonacci {
+            get {
+                object obj = ResourceManager.GetObject("Buton_SirulLuiFibonacci", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Buton_SumaSiDiferenta {
+            get {
+                object obj = ResourceManager.GetObject("Buton_SumaSiDiferenta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

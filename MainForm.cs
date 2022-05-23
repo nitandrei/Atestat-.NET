@@ -69,11 +69,15 @@ namespace Atestat.NET
         }
         private void buttonADB_Click(object sender, EventArgs e)
         {
+            Components.Show(ref Components.algoritmiDeBaza, true);
             updatePanelMini(sender as Button);
+            WelcomeForm welcome = new WelcomeForm();
+            welcome.ShowDialog();
         }
 
         private void buttonTDA_Click(object sender, EventArgs e)
         {
+            Components.Show(ref Components.teste, true);
             updatePanelMini(sender as Button);
         }
         private void codeEducationLogo_Click(object sender, EventArgs e)

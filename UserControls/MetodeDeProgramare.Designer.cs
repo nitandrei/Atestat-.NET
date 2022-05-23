@@ -29,85 +29,87 @@ namespace Atestat.NET.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonDEI = new System.Windows.Forms.Button();
+            this.buttonGreedy = new System.Windows.Forms.Button();
+            this.buttonBacktracking = new System.Windows.Forms.Button();
+            this.buttonPD = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonDEI
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(300, 200);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 127);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.button1.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
+            this.buttonDEI.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDEI.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
+            this.buttonDEI.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDEI.FlatAppearance.BorderSize = 0;
+            this.buttonDEI.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonDEI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonDEI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDEI.Location = new System.Drawing.Point(300, 200);
+            this.buttonDEI.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonDEI.Name = "buttonDEI";
+            this.buttonDEI.Size = new System.Drawing.Size(127, 127);
+            this.buttonDEI.TabIndex = 0;
+            this.buttonDEI.UseVisualStyleBackColor = false;
+            this.buttonDEI.Click += new System.EventHandler(this.buttonDEI_Click);
+            this.buttonDEI.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
+            this.buttonDEI.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
             // 
-            // button2
+            // buttonGreedy
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(528, 457);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 127);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.button2.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
+            this.buttonGreedy.BackColor = System.Drawing.Color.Transparent;
+            this.buttonGreedy.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
+            this.buttonGreedy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGreedy.FlatAppearance.BorderSize = 0;
+            this.buttonGreedy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonGreedy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonGreedy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGreedy.Location = new System.Drawing.Point(528, 457);
+            this.buttonGreedy.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonGreedy.Name = "buttonGreedy";
+            this.buttonGreedy.Size = new System.Drawing.Size(127, 127);
+            this.buttonGreedy.TabIndex = 1;
+            this.buttonGreedy.UseVisualStyleBackColor = false;
+            this.buttonGreedy.Click += new System.EventHandler(this.buttonGreedy_Click);
+            this.buttonGreedy.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
+            this.buttonGreedy.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
             // 
-            // button3
+            // buttonBacktracking
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(787, 160);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(127, 127);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.button3.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
+            this.buttonBacktracking.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBacktracking.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
+            this.buttonBacktracking.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBacktracking.FlatAppearance.BorderSize = 0;
+            this.buttonBacktracking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonBacktracking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonBacktracking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBacktracking.Location = new System.Drawing.Point(787, 160);
+            this.buttonBacktracking.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonBacktracking.Name = "buttonBacktracking";
+            this.buttonBacktracking.Size = new System.Drawing.Size(127, 127);
+            this.buttonBacktracking.TabIndex = 2;
+            this.buttonBacktracking.UseVisualStyleBackColor = false;
+            this.buttonBacktracking.Click += new System.EventHandler(this.buttonBacktracking_Click);
+            this.buttonBacktracking.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
+            this.buttonBacktracking.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
             // 
-            // button4
+            // buttonPD
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(1054, 480);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(127, 127);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.button4.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
+            this.buttonPD.BackColor = System.Drawing.Color.Transparent;
+            this.buttonPD.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_MDP_Albastru;
+            this.buttonPD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPD.FlatAppearance.BorderSize = 0;
+            this.buttonPD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonPD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonPD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPD.Location = new System.Drawing.Point(1054, 480);
+            this.buttonPD.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonPD.Name = "buttonPD";
+            this.buttonPD.Size = new System.Drawing.Size(127, 127);
+            this.buttonPD.TabIndex = 3;
+            this.buttonPD.UseVisualStyleBackColor = false;
+            this.buttonPD.Click += new System.EventHandler(this.buttonPD_Click);
+            this.buttonPD.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
+            this.buttonPD.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
             // 
             // MetodeDeProgramare
             // 
@@ -115,10 +117,10 @@ namespace Atestat.NET.UserControls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::Atestat.NET.Properties.Resources.MetodeDeProgramare;
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonPD);
+            this.Controls.Add(this.buttonBacktracking);
+            this.Controls.Add(this.buttonGreedy);
+            this.Controls.Add(this.buttonDEI);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "MetodeDeProgramare";
@@ -129,9 +131,9 @@ namespace Atestat.NET.UserControls
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonDEI;
+        private System.Windows.Forms.Button buttonGreedy;
+        private System.Windows.Forms.Button buttonBacktracking;
+        private System.Windows.Forms.Button buttonPD;
     }
 }

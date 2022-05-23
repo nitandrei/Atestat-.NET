@@ -41,6 +41,14 @@ namespace Atestat.NET
         public static Grafuri2 grafuri2;
         public static MetodeDeProgramare metodeDeProgramare;
         public static DivideEtImpera divideEtImpera;
+        public static Greedy greedy;
+        public static Backtracking backtracking;
+        public static ProgramareDinamica programareDinamica;
+        public static AlgoritmiDeBaza algoritmiDeBaza;
+        public static SumaDiferenta sumaDiferenta;
+        public static Divizibilitate divizibilitate;
+        public static CifreleUnuiNumar cifreleUnuiNumar;
+        public static Fibonacci fibonacci;
         public static Teste teste;
         /// <summary>
         /// Teste, formatul este "Nume_poze.extensie,numarul_variantei_corecte" EX: Poza.png,1
