@@ -29,13 +29,30 @@ namespace Atestat.NET.UserControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBack.BackgroundImage = global::Atestat.NET.Properties.Resources.Buton_Back;
+            this.buttonBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBack.FlatAppearance.BorderSize = 0;
+            this.buttonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBack.Location = new System.Drawing.Point(87, 595);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(62, 100);
+            this.buttonBack.TabIndex = 3;
+            this.buttonBack.UseVisualStyleBackColor = false;
             // 
             // Grafuri2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Atestat.NET.Properties.Resources.Grafuri2;
+            this.Controls.Add(this.buttonBack);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Grafuri2";
@@ -45,5 +62,7 @@ namespace Atestat.NET.UserControls
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonBack;
     }
 }
